@@ -1,10 +1,10 @@
-var gulp = require('gulp'),
-    sass = require('gulp-sass'),
-    concat = require('gulp-concat'),
-    uglify = require('gulp-uglify'),
-    babel = require('gulp-babel'),
-    minCSS = require('gulp-clean-css')
-    autoPrefixer = require('gulp-autoprefixer');
+var gulp            = require('gulp'),
+    sass            = require('gulp-sass'),
+    concat          = require('gulp-concat'),
+    uglify          = require('gulp-uglify'),
+    babel           = require('gulp-babel'),
+    minCSS          = require('gulp-clean-css'),
+    autoPrefixer    = require('gulp-autoprefixer');
 
 // Configuration Default
 gulp.task('default',['sass', 'js', 'watch']);

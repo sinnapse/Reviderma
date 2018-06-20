@@ -2,15 +2,7 @@
 
 	<main role="main">
 		<!-- section -->
-		<section id="home">
-
-<!--			<h1>--><?php //_e( 'Latest Posts', 'html5blank' ); ?><!--</h1>-->
-
-<!--			--><?php //get_template_part('loop'); ?>
-
-<!--			--><?php //get_template_part('pagination'); ?>
-
-		</section>
+		<section id="home"></section>
 		<!-- /section -->
 	</main>
 

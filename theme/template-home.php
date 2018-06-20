@@ -3,9 +3,7 @@
 	<main role="main">
 		<!-- section -->
 		<section>
-
-            kkkk
-
+      	      Theme is Working!
 		</section>
 		<!-- /section -->
 	</main>
