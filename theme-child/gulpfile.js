@@ -10,7 +10,7 @@ var gulp = require("gulp"),
 // Configuration SASS with Notification Error
 gulp.task("sass", () => {
   return gulp
-    .src("assets/src/sass/**/*.scss")
+    .src("assets/src/sass/style.scss")
     .pipe(concat("style.min.css")) // Concat
     .pipe(
       sass({ outputStyle: "compressed" }).on(
