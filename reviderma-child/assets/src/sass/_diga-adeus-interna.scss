@@ -1,0 +1,211 @@
+.diga-adeus-interna {
+  @extend .col-12;
+  padding: 0;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+  position: relative;
+
+  &__conteudo {
+    @extend .col-12;
+    padding: 0;
+
+    .diga-adeus-interna__item {
+      @extend .col-12;
+      padding: 0;
+      margin-bottom: 5rem;
+
+      &:last-child() {
+        margin-bottom: 6rem;
+      }
+
+      &-foto {
+        @extend .col-12;
+        padding: 0;
+        text-align: center;
+        margin-bottom: 4rem;
+
+        img {
+          @extend .img-fluid;
+          max-width: 270px;
+          margin: 0 auto;
+          position: relative;
+        }
+
+        &:after {
+          content: " ";
+          width: 268px;
+          background: $dark-blue;
+          height: 360px;
+          display: block;
+          top: -31px;
+          left: -3px;
+          position: absolute;
+          z-index: -1;
+          opacity: 0.2;
+        }
+      }
+
+      &-infos {
+        @extend .col-12;
+        padding: 0;
+        span {
+          width: 100%;
+        }
+
+        .titulo-destaque {
+          @extend .col-12;
+          padding: 0;
+
+          h3 {
+            text-transform: uppercase;
+            font-weight: bold;
+            color: $dark-blue;
+            position: relative;
+            font-size: 1.3em;
+          }
+
+          span {
+            color: $dark-blue;
+            position: absolute;
+            top: -12px;
+            left: -4px;
+            font-size: 2em;
+            opacity: 0.1;
+            font-weight: bold;
+            text-transform: uppercase;
+          }
+        }
+
+        ul {
+          padding-left: 14px;
+          li {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            color: $gray;
+            &:before {
+              content: "•";
+              color: $purple;
+              font-size: 1.6em;
+              margin-right: 5px;
+            }
+          }
+        }
+        a {
+          margin-left: 14px;
+          background: $purple;
+          color: $white;
+          font-weight: 900;
+          padding: 10px 30px;
+          border-radius: 25px;
+          text-transform: uppercase;
+          text-decoration: none;
+          transition: 0.2s;
+          &:hover {
+            box-shadow: 0px 2px 8px rgba(133, 114, 177, 0.7);
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: map-get($grid-breakpoints, sm)) {
+    &__conteudo {
+      .diga-adeus__item {
+        &-foto {
+          &::after {
+            top: -31px;
+            left: 75px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: map-get($grid-breakpoints, md)) {
+    &__conteudo {
+      .diga-adeus-interna__item {
+        margin-bottom: 10rem;
+        @include make-col(11);
+        margin: 0 auto;
+        &-foto {
+          @include make-col(6);
+          margin-bottom: 0;
+
+          &::after {
+            top: -31px;
+            left: 2px;
+          }
+        }
+
+        &-infos {
+          @include make-col(6);
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+
+          .titulo-destaque {
+            span {
+              font-size: 2.3em;
+              top: -16px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: map-get($grid-breakpoints, lg)) {
+    &__conteudo {
+      .diga-adeus-interna__item {
+        margin-bottom: 10rem;
+        @include make-col(10);
+        margin: 0 auto;
+
+        &-foto {
+          @include make-col(5);
+          padding-left: percentage(1/12);
+          margin-bottom: 0;
+
+          &::after {
+            top: -31px;
+            left: 31px;
+          }
+        }
+
+        &-infos {
+          @include make-col(5);
+          padding-left: percentage(1/12);
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+
+          .titulo-destaque {
+            span {
+              font-size: 3.1em;
+              top: -25px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: map-get($grid-breakpoints, xl)) {
+    &__conteudo {
+      .diga-adeus-interna__item {
+        margin-bottom: 10rem;
+
+        @include make-col(9);
+        margin: 0 auto;
+
+        &-foto {
+          &::after {
+            top: -31px;
+            left: 33px;
+          }
+        }
+      }
+    }
+  }
+}

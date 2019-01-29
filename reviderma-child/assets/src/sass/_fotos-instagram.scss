@@ -1,0 +1,274 @@
+.fotos-instagram {
+  @extend .col-12;
+  padding: 0;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background: rgba(112, 112, 122, 0.1);
+
+  &__titulo {
+    @extend .col-12;
+    text-align: center;
+    text-transform: uppercase;
+
+    p {
+      color: $dark-blue;
+      span {
+        font-weight: bold;
+        color: $purple;
+        font-size: 1.3em;
+      }
+    }
+  }
+
+  &__veja {
+    @extend .col-12;
+    padding: 0;
+    text-align: center;
+
+    a {
+      text-transform: uppercase;
+      color: $purple;
+      text-decoration: none;
+      font-size: 0.875em;
+      font-weight: bold;
+      line-height: 18px;
+      margin-top: 1rem;
+      display: block;
+      transition: 0.3s;
+      i {
+        margin-left: 5px;
+      }
+
+      &:hover {
+        color: $dark-blue;
+      }
+    }
+  }
+
+  @mixin backlight($x, $y, $spread, $size, $colorA, $colorB, $duration) {
+    &:after {
+      position: absolute;
+      content: "";
+      top: $y;
+      left: $x;
+      right: 0;
+      z-index: -1;
+      height: 100%;
+      width: 100%;
+      margin: 0 auto;
+      transform: scale($size);
+      -webkit-filter: blur($spread);
+      -moz-filter: blur($spread);
+      -ms-filter: blur($spread);
+      filter: blur($spread);
+      background: linear-gradient(270deg, $colorA, $colorB);
+      background-size: 200% 200%;
+      animation: animateGlow $duration ease infinite;
+
+      @keyframes animateGlow {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+    }
+  }
+
+  .foto-insta {
+    @extend .col-12;
+    padding: 0;
+    margin-bottom: 1rem;
+    &:hover {
+      @include backlight(0, 0, 5vw, 0.75, #0fffc1, #7e0fff, 4s);
+    }
+  }
+
+  #instafeed-gallery-feed {
+    @extend .col-12;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+
+  .img-featured-container {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .img-featured-container img {
+    width: 100%;
+    /*   padding: 10px; */
+  }
+
+  .img-featured-container .img-backdrop {
+    background: linear-gradient(
+      135deg,
+      rgba(133, 114, 177, 0.85),
+      rgba(98, 167, 177, 0.85)
+    );
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  .img-featured-container:hover > .img-backdrop {
+    opacity: 1;
+  }
+
+  /* center text horizontally and vertically on image hover */
+  .img-featured-container .description-container {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.2;
+    padding: 0 30px;
+    text-align: center;
+    line-height: 20px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-style: preserve-3d;
+    z-index: 2;
+    opacity: 0;
+    transition: all 0.2s ease;
+  }
+
+  .img-featured-container .description-container .fa-instagram {
+    font-size: 40px;
+  }
+
+  .img-featured-container .description-container p {
+    font-weight: 300;
+    margin-bottom: 0;
+  }
+
+  .img-featured-container:hover .description-container {
+    opacity: 1;
+  }
+
+  .img-featured-container .description-container .caption {
+    display: none;
+    margin-bottom: 10px;
+  }
+
+  .img-featured-container .description-container .likes,
+  .img-featured-container .description-container .comments {
+    margin: 0 5px;
+  }
+
+  @media (min-width: map-get($grid-breakpoints, sm)) {
+    .foto-insta {
+      max-width: calc(50% - 10px);
+      margin: 5px;
+    }
+  }
+
+  @media screen and (min-width: map-get($grid-breakpoints, md)) {
+    padding-top: 2rem;
+    &__titulo {
+      p {
+        position: relative;
+        left: -233px;
+        bottom: -69px;
+      }
+    }
+
+    #instafeed-gallery-feed {
+      @include make-col(4);
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .foto-insta {
+      @include make-col(12);
+      margin: 0;
+      margin-bottom: 1rem;
+
+      &:nth-child(1) {
+        position: absolute;
+        top: 10%;
+        left: -104%;
+      }
+
+      &:nth-child(2) {
+        position: absolute;
+        top: 10%;
+        right: -104%;
+      }
+
+      &:nth-child(6) {
+        position: absolute;
+        top: 43%;
+        left: -104%;
+      }
+
+      &:nth-child(7) {
+        position: absolute;
+        top: 43%;
+        right: -104%;
+      }
+    }
+
+    .img-featured-container .description-container .caption {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: map-get($grid-breakpoints, lg)) {
+    &__titulo p {
+      left: -283px;
+    }
+
+    #instafeed-gallery-feed {
+      @include make-col(3);
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .foto-insta {
+      @include make-col(12);
+      margin: 0;
+      margin-bottom: 1rem;
+
+      &:nth-child(1) {
+        position: absolute;
+        top: 10%;
+        left: -104%;
+      }
+
+      &:nth-child(2) {
+        position: absolute;
+        top: 10%;
+        right: -104%;
+      }
+
+      &:nth-child(6) {
+        position: absolute;
+        top: 43%;
+        left: -104%;
+      }
+
+      &:nth-child(7) {
+        position: absolute;
+        top: 43%;
+        right: -104%;
+      }
+    }
+
+    .img-featured-container .description-container .caption {
+      display: block;
+    }
+  }
+}

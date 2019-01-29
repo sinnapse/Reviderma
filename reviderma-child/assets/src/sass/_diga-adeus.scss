@@ -1,0 +1,380 @@
+.diga-adeus {
+  @extend .col-12;
+  padding: 0;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+  position: relative;
+
+  &__topo {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    img {
+      max-width: 87px;
+      opacity: 0.2;
+    }
+  }
+
+  &__rodape {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    img {
+      max-width: 87px;
+      opacity: 0.2;
+      transform: rotate(180deg);
+    }
+  }
+
+  &__titulo {
+    @extend .col-12;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 4rem;
+
+    h2 {
+      color: $dark-blue;
+      text-transform: uppercase;
+      font-size: 1em;
+      margin: 0;
+    }
+
+    p {
+      color: $purple;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 1.1em;
+    }
+  }
+
+  &__conteudo {
+    @extend .col-12;
+    padding: 0;
+
+    .diga-adeus__item {
+      @extend .col-12;
+      padding: 0;
+      margin-bottom: 5rem;
+
+      &:last-child() {
+        margin-bottom: 6rem;
+      }
+
+      &-foto {
+        @extend .col-12;
+        padding: 0;
+        text-align: center;
+        margin-bottom: 4rem;
+
+        img {
+          @extend .img-fluid;
+          max-width: 270px;
+          margin: 0 auto;
+          position: relative;
+        }
+
+        &:after {
+          content: " ";
+          width: 268px;
+          background: $dark-blue;
+          height: 360px;
+          display: block;
+          top: -31px;
+          left: -3px;
+          position: absolute;
+          z-index: -1;
+          opacity: 0.2;
+        }
+      }
+
+      &-infos {
+        @extend .col-12;
+        padding: 0;
+        span {
+          width: 100%;
+        }
+
+        .titulo-destaque {
+          @extend .col-12;
+          padding: 0;
+
+          h3 {
+            text-transform: uppercase;
+            font-weight: bold;
+            color: $dark-blue;
+            position: relative;
+            font-size: 1.3em;
+          }
+
+          span {
+            color: $dark-blue;
+            position: absolute;
+            top: -12px;
+            left: -4px;
+            font-size: 2em;
+            opacity: 0.1;
+            font-weight: bold;
+            text-transform: uppercase;
+          }
+        }
+
+        ul {
+          padding-left: 14px;
+          li {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            color: $gray;
+            &:before {
+              content: "•";
+              color: $purple;
+              font-size: 1.6em;
+              margin-right: 5px;
+            }
+          }
+        }
+        a {
+          margin-left: 14px;
+          background: $purple;
+          color: $white;
+          font-weight: 900;
+          padding: 10px 30px;
+          border-radius: 25px;
+          text-transform: uppercase;
+          text-decoration: none;
+          transition: 0.2s;
+          &:hover {
+            box-shadow: 0px 2px 8px rgba(133, 114, 177, 0.7);
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: map-get($grid-breakpoints, sm)) {
+    &__topo img,
+    &__rodape img {
+      max-width: 133px;
+    }
+
+    &__titulo {
+      h2 {
+        font-size: 1.5em;
+      }
+
+      p {
+        font-size: 2em;
+      }
+    }
+
+    &__conteudo {
+      .diga-adeus__item {
+        &-foto {
+          &::after {
+            top: -31px;
+            left: 75px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: map-get($grid-breakpoints, md)) {
+    &__topo img,
+    &__rodape img {
+      max-width: 161px;
+    }
+
+    &__titulo {
+      h2 {
+        font-size: 1.8em;
+      }
+
+      p {
+        font-size: 2.4em;
+      }
+    }
+
+    &__conteudo {
+      .diga-adeus__item {
+        margin-bottom: 10rem;
+
+        &:nth-child(2) {
+          .diga-adeus__item-foto {
+            order: 1;
+
+            &:after {
+              left: auto;
+              right: 2px;
+            }
+          }
+
+          .diga-adeus__item-infos {
+            order: 0;
+            text-align: right;
+
+            ul {
+              padding-left: 0;
+              padding-right: 14px;
+              li {
+                justify-content: flex-end;
+              }
+            }
+            a {
+              margin-left: 0;
+              margin-right: 14px;
+            }
+          }
+        }
+
+        &-foto {
+          @include make-col(6);
+          margin-bottom: 0;
+
+          &::after {
+            top: -31px;
+            left: 2px;
+          }
+        }
+
+        &-infos {
+          @include make-col(6);
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+
+          .titulo-destaque {
+            span {
+              font-size: 2.3em;
+              top: -16px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: map-get($grid-breakpoints, lg)) {
+    &__topo img,
+    &__rodape img {
+      max-width: 201px;
+    }
+    &__titulo {
+      h2 {
+        font-size: 1.8em;
+      }
+
+      p {
+        font-size: 2.4em;
+      }
+    }
+
+    &__conteudo {
+      .diga-adeus__item {
+        margin-bottom: 10rem;
+
+        &:nth-child(2) {
+          .diga-adeus__item-foto {
+            order: 1;
+            @include make-col(5);
+            padding-left: percentage(0/12);
+            padding-right: percentage(1/12);
+
+            &:after {
+              left: auto;
+              right: 57px;
+            }
+          }
+
+          .diga-adeus__item-infos {
+            order: 0;
+            text-align: right;
+
+            ul {
+              padding-left: 0;
+              padding-right: 14px;
+              li {
+                justify-content: flex-end;
+              }
+            }
+            a {
+              margin-left: 0;
+              margin-right: 14px;
+            }
+          }
+        }
+
+        &-foto {
+          @include make-col(5);
+          padding-left: percentage(1/12);
+          margin-bottom: 0;
+
+          &::after {
+            top: -31px;
+            left: 57px;
+          }
+        }
+
+        &-infos {
+          @include make-col(6);
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+
+          .titulo-destaque {
+            span {
+              font-size: 3.1em;
+              top: -25px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: map-get($grid-breakpoints, xl)) {
+    &__topo img,
+    &__rodape img {
+      max-width: 242px;
+    }
+    &__conteudo {
+      .diga-adeus__item {
+        margin-bottom: 10rem;
+
+        &:nth-child(2) {
+          .diga-adeus__item-foto {
+            &:after {
+              left: auto;
+              right: 109px;
+            }
+          }
+        }
+
+        &-foto {
+          &::after {
+            top: -31px;
+            left: 109px;
+          }
+        }
+      }
+    }
+  }
+
+  // 1600PX
+  @media (min-width: 100em) {
+    &__topo img,
+    &__rodape img {
+      max-width: 358px;
+    }
+  }
+
+  // 1900PX
+  @media (min-width: 118.75em) {
+    &__topo img,
+    &__rodape img {
+      max-width: 468px;
+    }
+  }
+}

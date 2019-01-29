@@ -1,0 +1,117 @@
+.qual-objetivo {
+  @extend .col-12;
+  padding: 0;
+  background: $dark-blue;
+  color: $white;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+
+  &__titulo {
+    @extend .col-12;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 2rem;
+
+    h2 {
+      font-size: 1.1em;
+    }
+
+    p {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 1.3em;
+    }
+  }
+
+  &__conteudo {
+    @extend .col-12;
+    padding: 0;
+
+    .item-objetivo {
+      @extend .col-12;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+      margin-bottom: 2rem;
+
+      svg {
+        margin-bottom: 1rem;
+      }
+
+      h3 {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1em;
+        display: block;
+        margin-bottom: 2rem;
+      }
+
+      a {
+        display: block;
+        button {
+          padding: 10px 30px;
+          background: $white;
+          border-radius: 25px;
+          border: 0;
+          text-transform: uppercase;
+          font-weight: 900;
+          color: $dark-blue;
+          line-height: 18px;
+          transition: 0.4s;
+          &:hover {
+            color: $white;
+            background: lighten($dark-blue, 10%);
+            box-shadow: 0px 2px 8px rgba(48, 133, 145, 0.9);
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: map-get($grid-breakpoints, sm)) {
+    &__conteudo {
+      .item-objetivo {
+        @include make-col(6);
+      }
+    }
+  }
+
+  @media (min-width: map-get($grid-breakpoints, md)) {
+    &__titulo {
+      h2 {
+        font-size: 1.2em;
+      }
+
+      p {
+        font-size: 1.8em;
+      }
+    }
+
+    &__conteudo {
+      .item-objetivo {
+        @include make-col(4);
+      }
+    }
+  }
+
+  @media (min-width: map-get($grid-breakpoints, xl)) {
+    &__titulo {
+      h2 {
+        font-size: 1.5em;
+      }
+
+      p {
+        font-size: 2.3em;
+      }
+    }
+
+    &__conteudo {
+      .item-objetivo {
+        max-width: 20%;
+      }
+    }
+  }
+}

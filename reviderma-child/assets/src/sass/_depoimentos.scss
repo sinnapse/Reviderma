@@ -1,0 +1,221 @@
+.depoimentos {
+  @extend .col-12;
+  padding: 0;
+  background: url(../../../reviderma/img/bg-depo.png) repeat-x top $dark-blue;
+  color: $white;
+  margin-top: 3rem;
+  padding-bottom: 1rem;
+  position: relative;
+
+  .owl-nav {
+    button.owl-prev {
+      outline: 0;
+      i {
+        font-size: 1.4em;
+        padding: 5px;
+      }
+      &:hover {
+        background: transparent;
+      }
+    }
+    button.owl-next {
+      outline: 0;
+      i {
+        font-size: 1.4em;
+        padding: 5px;
+      }
+      &:hover {
+        background: transparent;
+      }
+    }
+  }
+
+  .item-depoimento {
+    @extend .col-12;
+    padding: 0;
+    position: relative;
+    text-align: center;
+
+    .foto-destaque {
+      @extend .col-12;
+      padding: 0;
+      text-align: center;
+      margin-bottom: 2rem;
+
+      img {
+        width: 124px;
+        height: 124px;
+        margin: 0 auto;
+        border-radius: 50%;
+        border: 5px solid $white;
+      }
+    }
+
+    &__nome {
+      @extend .col-12;
+      padding: 0;
+
+      p {
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+
+    &__texto {
+      @extend .col-12;
+      padding: 0;
+
+      p {
+        position: relative;
+      }
+
+      .aspas-cima {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 88px;
+        height: 63px;
+        background: url(../../../reviderma/img/aspas.png) no-repeat center;
+        background-size: cover;
+      }
+
+      .aspas-baixo {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 88px;
+        height: 63px;
+        background: url(../../../reviderma/img/aspas.png) no-repeat center;
+        background-size: cover;
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  @media (min-width: map-get($grid-breakpoints, md)) {
+    .owl-nav {
+      button.owl-prev {
+        position: absolute;
+        left: 0;
+        top: 62%;
+      }
+      button.owl-next {
+        position: absolute;
+        right: 0;
+        top: 62%;
+      }
+    }
+
+    .owl-dots {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .owl-dot {
+        span {
+          width: 7px;
+          height: 7px;
+          opacity: 0.5;
+          transition: 0.2s;
+          background: $white;
+        }
+
+        &.active {
+          span {
+            width: 9px;
+            height: 9px;
+            background: $white;
+            opacity: 1;
+            transition: 0.2s;
+          }
+        }
+      }
+
+      button {
+        outline: 0;
+      }
+    }
+    .item-depoimento {
+      &__texto {
+        p {
+          @include make-col(8);
+          margin: 0 auto;
+          padding-bottom: 2rem;
+        }
+
+        .aspas-cima {
+          top: -33px;
+          left: 85px;
+        }
+
+        .aspas-baixo {
+          bottom: 0px;
+          right: 109px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: map-get($grid-breakpoints, lg)) {
+    .owl-nav {
+      button.owl-prev {
+        position: absolute;
+        left: 0;
+        top: 62%;
+      }
+      button.owl-next {
+        position: absolute;
+        right: 0;
+        top: 62%;
+      }
+    }
+
+    .item-depoimento {
+      &__texto {
+        p {
+          @include make-col(9);
+          margin: 0 auto;
+          padding-bottom: 2rem;
+        }
+
+        .aspas-cima {
+          top: -33px;
+          left: 123px;
+        }
+
+        .aspas-baixo {
+          bottom: 0px;
+          right: 128px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: map-get($grid-breakpoints, xl)) {
+    .owl-nav button.owl-prev {
+      left: 150px;
+    }
+
+    .owl-nav button.owl-next {
+      right: 150px;
+    }
+    .item-depoimento {
+      &__texto {
+        p {
+          @include make-col(7);
+          margin: 0 auto;
+          padding-bottom: 2rem;
+        }
+
+        .aspas-cima {
+          top: -33px;
+          left: 240px;
+        }
+
+        .aspas-baixo {
+          bottom: 0px;
+          right: 245px;
+        }
+      }
+    }
+  }
+}
