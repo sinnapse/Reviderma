@@ -66,7 +66,7 @@
 			<div class='slider owl-carousel owl-theme'>
         <div class="item slide1">
             <h2>Btl Hot Summer</h2>
-            <span> Você pronta para o verão</span>
+            <span> Você pronta para o espelho</span>
 
             <button>
               Eu quero <i class="fas fa-arrow-right"></i>

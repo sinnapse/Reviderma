@@ -151,4 +151,15 @@
       }
     }
   }
+
+  @media (min-width: map-get($grid-breakpoints, md)) {
+    &__conteudo {
+      .item-post {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
 }

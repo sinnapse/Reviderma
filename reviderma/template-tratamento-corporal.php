@@ -7,8 +7,8 @@ get_header('intern'); ?>
     <div class="item tratamento-corporal">
       <div class="container">
         <div class="alinha">
-          <h2>XWAVE</h2>
-          <span> Adeus a Celulite, Estrias e Cicatrizes</span>
+          <h2>REVIDERMA VANQUISH</h2>
+          <span> Perda de Gordura Corpo, Braços e Pernas</span>
 
           <button>
             Eu quero <i class="fas fa-arrow-right"></i>
@@ -34,20 +34,20 @@ get_header('intern'); ?>
             <div class="diga-adeus-interna__item">
               <div class="row no-gutters">
                 <div class="diga-adeus-interna__item-foto">
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/xwave.jpg" alt="XWAVE">
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/vanquish.png" alt="VANQUISH">
                 </div><!-- /.diga-adeus-interna__item-foto -->
 
                 <div class="diga-adeus-interna__item-infos">
                   <span>
                     <div class="titulo-destaque">
-                      <h3>XWAVE</h3>
-                      <span>XWAVE</span>
+                      <h3>VANQUISH</h3>
+                      <span>VANQUISH</span>
                     </div><!-- /titulo-destaque -->
 
                     <ul>
-                      <li>Reduz a Celulite</li>
-                      <li>Reduz Estrias</li>
-                      <li>Reduz Cicatrizes</li>
+                      <li>PARA O CORPO</li>
+                      <li>PARA OS BRAÇOS</li>
+                      <li>PARA AS PERNAS</li>
                     </ul>
                   </span>
 
@@ -85,6 +85,170 @@ get_header('intern'); ?>
   <div class='antes-depois'>
     <div class='container'>
       <img src="<?php echo get_template_directory_uri(); ?>/img/antes-depois-tratamento-corporal.jpg" alt="Antes e Depois">
+    </div><!-- /container -->
+  </div><!-- /antes-depois -->
+  <!-- FIM ANTES - DEPOIS -->
+
+  <!-- INICIO DIVISAO INTERNA -->
+  <section>
+    <div class='divisao-interna exilis'>
+      <div class='container'>
+        <div class="alinha">
+          <h2>Reviderma Exilis</h2>
+          <span>Tratamento da Cabeça aos Pés</span>
+          <button>
+            Eu quero <i class="fas fa-arrow-right"></i>
+          </button>
+        </div><!-- /.alinha -->
+      </div><!-- /container -->
+    </div><!-- /divisao-interna -->
+  </section>
+  <!-- FIM DIVISAO INTERNA -->
+
+  <!-- INICIO DIGA ADEUS -->
+  <section>
+    <div class='diga-adeus-interna'>
+      <div class='container'>
+        <div class='row no-gutters'>
+
+          <div class="diga-adeus-interna__conteudo">
+
+            <div class="diga-adeus-interna__item">
+              <div class="row no-gutters">
+                <div class="diga-adeus-interna__item-foto">
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/exilis.png" alt="EXILIS ELITE">
+                </div><!-- /.diga-adeus-interna__item-foto -->
+
+                <div class="diga-adeus-interna__item-infos">
+                  <span>
+                    <div class="titulo-destaque">
+                      <h3>EXILIS ELITE</h3>
+                      <span>EXILIS ELITE</span>
+                    </div><!-- /titulo-destaque -->
+
+                    <ul>
+                      <li>REJUVENESCIMENTO FACIAL</li>
+                      <li>TONIFICAÇÃO DA PELE</li>
+                      <li>MODELAGEM CORPORAL</li>
+                    </ul>
+                  </span>
+
+                </div><!-- /diga-adeus-interna__item-infos -->
+              </div><!-- /.row no-gutters -->
+            </div><!-- /diga-adeus-interna__item -->
+
+          </div><!-- /diga-adeus-interna__conteudo -->
+
+          <div class="diga-adeus__titulo" style='margin-bottom: 0rem;'>
+            <h2>COMO FUNCIONA ?</h2>
+            <p>SIMPLESMENTE FIQUE MAIS JOVEM</p>
+				  </div><!-- /.diga-adeus__titulo -->
+
+        </div><!-- /row -->
+      </div><!-- /container -->
+    </div><!-- /diga-adeus -->
+  </section>
+  <!-- FIM DIGA ADEUS -->
+
+  <!-- INICIO YOUTUBE -->
+  <div class='youtube'>
+    <div class='container'>
+      <div class='row no-gutters'>
+
+        <div class="youtube-player" data-id="ifwc5xgI3QM" data-related="0" data-control="0" data-info="0" data-fullscreen="1"><img class="placeholder" src="//i.ytimg.com/vi/ifwc5xgI3QM/maxresdefault.jpg">
+          <div class="play-button"></div>
+        </div>
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </div><!-- /youtube -->
+  <!-- FIM YOUTUBE -->
+
+  <!-- INICIO ANTES - DEPOIS -->
+  <div class='antes-depois'>
+    <div class='container'>
+      <img src="<?php echo get_template_directory_uri(); ?>/img/antes-depois-exilir.png" alt="Antes e Depois">
+    </div><!-- /container -->
+  </div><!-- /antes-depois -->
+  <!-- FIM ANTES - DEPOIS -->
+
+  <!-- INICIO DIVISAO INTERNA -->
+  <section>
+    <div class='divisao-interna xwave'>
+      <div class='container'>
+        <div class="alinha">
+          <h2>REVIDERMA XWAVE</h2>
+          <span>Adeus a Celulite, Estrias e Cicatrizes</span>
+          <button>
+            Eu quero <i class="fas fa-arrow-right"></i>
+          </button>
+        </div><!-- /.alinha -->
+      </div><!-- /container -->
+    </div><!-- /divisao-interna -->
+  </section>
+  <!-- FIM DIVISAO INTERNA -->
+
+  <!-- INICIO DIGA ADEUS -->
+  <section>
+    <div class='diga-adeus-interna'>
+      <div class='container'>
+        <div class='row no-gutters'>
+
+          <div class="diga-adeus-interna__conteudo">
+
+            <div class="diga-adeus-interna__item">
+              <div class="row no-gutters">
+                <div class="diga-adeus-interna__item-foto">
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/xwave.jpg" alt="XWAVE">
+                </div><!-- /.diga-adeus-interna__item-foto -->
+
+                <div class="diga-adeus-interna__item-infos">
+                  <span>
+                    <div class="titulo-destaque">
+                      <h3>XWAVE</h3>
+                      <span>XWAVE</span>
+                    </div><!-- /titulo-destaque -->
+
+                    <ul>
+                      <li>REDUZ A CELULITE</li>
+                      <li>REDUZ ESTRIAS</li>
+                      <li>REDUZ CICATRIZES</li>
+                    </ul>
+                  </span>
+
+                </div><!-- /diga-adeus-interna__item-infos -->
+              </div><!-- /.row no-gutters -->
+            </div><!-- /diga-adeus-interna__item -->
+
+          </div><!-- /diga-adeus-interna__conteudo -->
+
+          <div class="diga-adeus__titulo" style='margin-bottom: 0rem;'>
+            <h2>COMO FUNCIONA ?</h2>
+            <p>TRATAMENTO SEM DOR E SEM DESCONFORTO</p>
+				  </div><!-- /.diga-adeus__titulo -->
+
+        </div><!-- /row -->
+      </div><!-- /container -->
+    </div><!-- /diga-adeus -->
+  </section>
+  <!-- FIM DIGA ADEUS -->
+
+  <!-- INICIO YOUTUBE -->
+  <div class='youtube'>
+    <div class='container'>
+      <div class='row no-gutters'>
+
+        <div class="youtube-player" data-id="ifwc5xgI3QM" data-related="0" data-control="0" data-info="0" data-fullscreen="1"><img class="placeholder" src="//i.ytimg.com/vi/ifwc5xgI3QM/maxresdefault.jpg">
+          <div class="play-button"></div>
+        </div>
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </div><!-- /youtube -->
+  <!-- FIM YOUTUBE -->
+
+  <!-- INICIO ANTES - DEPOIS -->
+  <div class='antes-depois'>
+    <div class='container'>
+      <img src="<?php echo get_template_directory_uri(); ?>/img/antes-depois-tratamento-xwave.png" alt="Antes e Depois">
     </div><!-- /container -->
   </div><!-- /antes-depois -->
   <!-- FIM ANTES - DEPOIS -->
@@ -476,6 +640,33 @@ get_header('intern'); ?>
 										<path id="Path_65" data-name="Path 65" d="M-301.119,371.31s3.624-4.633,8.162-9.707" transform="translate(1727.513 746.148)" fill="rgba(0,0,0,0)" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" class="dUvkLDaJ_10"></path>
 									</g>
 									<style data-made-with="vivus-instant">.dUvkLDaJ_0{stroke-dasharray:370 372;stroke-dashoffset:371;}.start .dUvkLDaJ_0{animation:dUvkLDaJ_draw 2000ms linear 0ms forwards;}.dUvkLDaJ_1{stroke-dasharray:313 315;stroke-dashoffset:314;}.start .dUvkLDaJ_1{animation:dUvkLDaJ_draw 2000ms linear 100ms forwards;}.dUvkLDaJ_2{stroke-dasharray:68 70;stroke-dashoffset:69;}.start .dUvkLDaJ_2{animation:dUvkLDaJ_draw 2000ms linear 200ms forwards;}.dUvkLDaJ_3{stroke-dasharray:68 70;stroke-dashoffset:69;}.start .dUvkLDaJ_3{animation:dUvkLDaJ_draw 2000ms linear 300ms forwards;}.dUvkLDaJ_4{stroke-dasharray:53 55;stroke-dashoffset:54;}.start .dUvkLDaJ_4{animation:dUvkLDaJ_draw 2000ms linear 400ms forwards;}.dUvkLDaJ_5{stroke-dasharray:43 45;stroke-dashoffset:44;}.start .dUvkLDaJ_5{animation:dUvkLDaJ_draw 2000ms linear 500ms forwards;}.dUvkLDaJ_6{stroke-dasharray:43 45;stroke-dashoffset:44;}.start .dUvkLDaJ_6{animation:dUvkLDaJ_draw 2000ms linear 600ms forwards;}.dUvkLDaJ_7{stroke-dasharray:40 42;stroke-dashoffset:41;}.start .dUvkLDaJ_7{animation:dUvkLDaJ_draw 2000ms linear 700ms forwards;}.dUvkLDaJ_8{stroke-dasharray:14 16;stroke-dashoffset:15;}.start .dUvkLDaJ_8{animation:dUvkLDaJ_draw 2000ms linear 800ms forwards;}.dUvkLDaJ_9{stroke-dasharray:56 58;stroke-dashoffset:57;}.start .dUvkLDaJ_9{animation:dUvkLDaJ_draw 2000ms linear 900ms forwards;}.dUvkLDaJ_10{stroke-dasharray:13 15;stroke-dashoffset:14;}.start .dUvkLDaJ_10{animation:dUvkLDaJ_draw 2000ms linear 1000ms forwards;}@keyframes dUvkLDaJ_draw{100%{stroke-dashoffset:0;}}@keyframes dUvkLDaJ_fade{0%{stroke-opacity:1;}94.44444444444444%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style>
+								</svg>
+
+							
+								<h3>Tratamento Íntimo</h3>
+								
+								<a href="#">
+									<button>
+										Eu Quero
+									</button>
+								</a>
+
+              </div><!-- /.item-objetivo -->
+              
+              <div class="item-objetivo">
+
+								<svg xmlns="http://www.w3.org/2000/svg" width="119.49" height="119.49" viewBox="0 0 119.49 119.49" style="" class="class1">
+									<g id="Symbol_2_1" data-name="Symbol 2 â 1" transform="translate(-1224 -1351)">
+										<path id="Ellipse_111" data-name="Ellipse 111" transform="translate(1234.075 1361.075)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M0,49.67A49.67,49.67 0,1,1 99.34,49.67A49.67,49.67 0,1,1 0,49.67" class="UHKylWCm_0"></path>
+										<path id="Ellipse_112" data-name="Ellipse 112" transform="translate(1225 1352)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M0,58.745A58.745,58.745 0,1,1 117.49,58.745A58.745,58.745 0,1,1 0,58.745" class="UHKylWCm_1"></path>
+										<g id="Group_265" data-name="Group 265" transform="translate(1257.169 1388.155)">
+											<path id="Path_193" data-name="Path 193" d="M-578.178,1007.046s1.888,6.535,17.936,10.529c5.955,1.453,9.658,1.526,9.658,7.407,2.686-4.066,9.149-8.932,6.825-23.382-2.178-13-17.355-16.621-22.728-16.629s-9.585.218-15.757,7.479c-6.608,1.162-14.523,10.384-10.239,21.567a59.667,59.667,0,0,0,6.318,11.546s-2.251-9.368,3.848-13.071c3.922-2.179,5.474-2.978,5.474-2.978" transform="translate(593.698 -984.971)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="UHKylWCm_2"></path>
+											<path id="Path_194" data-name="Path 194" d="M-590.615,1023.974s-4.312,9.857,5.164,12.8c0,3.377,1.089,10.293,2.941,11.927s7.951,8.932,13.833,8.932,11.437-4.575,15.467-8.6c1.416-2.4,2.505-11.219,2.941-11.982s8.278-2.669,5.192-13.07" transform="translate(593.347 -991.478)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="UHKylWCm_3"></path>
+										</g>
+										<path id="Path_195" data-name="Path 195" d="M-584.675,983.452a3.331,3.331,0,0,0,3.519-2.217l1.865-5.9a2.226,2.226,0,0,0-1.875-2.977,3.349,3.349,0,0,0-3.384,1.878l-4.685-7.188a2.744,2.744,0,0,0-3.815-.537,2.744,2.744,0,0,0-1.161,3.673l4.685,7.188a3.347,3.347,0,0,0-3.154,2.242,2.226,2.226,0,0,0,1.876,2.977Z" transform="translate(1851.008 406.351)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" class="UHKylWCm_4"></path>
+										<path id="Path_196" data-name="Path 196" d="M-561.159,976.08a3.33,3.33,0,0,0,3.518-2.217l1.866-5.9a2.226,2.226,0,0,0-1.876-2.977,3.349,3.349,0,0,0-3.384,1.878l-4.685-7.188a2.743,2.743,0,0,0-3.815-.537,2.745,2.745,0,0,0-1.161,3.673l4.685,7.188a3.347,3.347,0,0,0-3.153,2.242,2.226,2.226,0,0,0,1.875,2.977Z" transform="translate(1847.085 407.581)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" class="UHKylWCm_5"></path>
+									</g>
+									<style data-made-with="vivus-instant">.UHKylWCm_0{stroke-dasharray:313 315;stroke-dashoffset:314;}.start .UHKylWCm_0{animation:UHKylWCm_draw 2000ms linear 0ms forwards;}.UHKylWCm_1{stroke-dasharray:370 372;stroke-dashoffset:371;}.start .UHKylWCm_1{animation:UHKylWCm_draw 2000ms linear 200ms forwards;}.UHKylWCm_2{stroke-dasharray:171 173;stroke-dashoffset:172;}.start .UHKylWCm_2{animation:UHKylWCm_draw 2000ms linear 400ms forwards;}.UHKylWCm_3{stroke-dasharray:92 94;stroke-dashoffset:93;}.start .UHKylWCm_3{animation:UHKylWCm_draw 2000ms linear 600ms forwards;}.UHKylWCm_4{stroke-dasharray:59 61;stroke-dashoffset:60;}.start .UHKylWCm_4{animation:UHKylWCm_draw 2000ms linear 800ms forwards;}.UHKylWCm_5{stroke-dasharray:59 61;stroke-dashoffset:60;}.start .UHKylWCm_5{animation:UHKylWCm_draw 2000ms linear 1000ms forwards;}@keyframes UHKylWCm_draw{100%{stroke-dashoffset:0;}}@keyframes UHKylWCm_fade{0%{stroke-opacity:1;}94.44444444444444%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style>
 								</svg>
 
 							

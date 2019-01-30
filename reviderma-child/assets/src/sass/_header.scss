@@ -21,15 +21,21 @@ header {
     &.mostrar {
       position: fixed;
       padding-top: 0;
-      background: $white;
       top: 0;
       left: 0;
       transition: all 0.35s ease;
-      box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
-      padding-top: 0.5rem;
-      padding-bottom: 0.5rem;
       padding-left: 20px;
       padding-right: 20px;
+
+      background: transparent;
+
+      .container-fluid {
+        box-shadow: 0px 3px 19px -8px rgba(0, 0, 0, 0.75);
+
+        background: $white;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
 
       .logo {
         img.white {
@@ -267,6 +273,7 @@ header {
       }
       .menu {
         @include make-col(10);
+        padding-right: 0;
         .bar {
           display: none;
         }

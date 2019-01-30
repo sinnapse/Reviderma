@@ -295,3 +295,540 @@
     color: #333;
   }
 }
+
+.inicio-sobre {
+  @extend .col-12;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__foto {
+    @extend .col-12;
+    padding: 0;
+    height: 247px;
+    overflow: hidden;
+    background: url(../../../reviderma/img/reviderma-local.png) no-repeat center;
+    background-size: cover;
+    img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      height: auto;
+      width: 100%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__texto {
+    @extend .col-12;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: relative;
+
+    .detalhe-topo {
+      @extend .col-12;
+      padding: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+
+      img {
+        width: 60px;
+        opacity: 0.2;
+      }
+    }
+
+    h2 {
+      color: $dark-blue;
+      margin-bottom: 1rem;
+
+      strong {
+        color: $purple;
+        text-transform: uppercase;
+      }
+    }
+
+    p {
+      color: $gray;
+      font-weight: 500;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    a {
+      margin-top: 2rem;
+      display: inline-block;
+      background: $purple;
+      border-radius: 25px;
+      padding: 14px 30px;
+      color: $white;
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 0.9375em;
+      text-decoration: none;
+      transition: 0.2s;
+
+      &:hover {
+        transition: 0.2s;
+        box-shadow: 0px 2px 8px $purple;
+      }
+    }
+  }
+
+  @media (min-width: map-get($grid-breakpoints, md)) {
+    &__foto {
+      @include make-col(6);
+      height: auto;
+      order: 1;
+    }
+    &__texto {
+      @include make-col(6);
+      order: 0;
+    }
+  }
+
+  @media (min-width: map-get($grid-breakpoints, xl)) {
+    &__foto {
+      @include make-col(6);
+      height: auto;
+      order: 1;
+    }
+    &__texto {
+      @include make-col(5);
+      margin-left: percentage(1/12);
+      order: 0;
+
+      .detalhe-topo {
+        left: -97px;
+
+        img {
+          width: 119px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1338px) {
+    &__texto {
+      @include make-col(4);
+      margin-left: percentage(1/12);
+      margin-right: percentage(1/12);
+      order: 0;
+
+      .detalhe-topo {
+        left: -97px;
+
+        img {
+          width: 119px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1425px) {
+    &__foto {
+      @include make-col(5);
+    }
+
+    &__texto {
+      @include make-col(4);
+      margin-left: percentage(2/12);
+      margin-right: percentage(1/12);
+      order: 0;
+
+      .detalhe-topo {
+        left: -235px;
+
+        img {
+          width: 235px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1600px) {
+    &__foto {
+      @include make-col(4);
+    }
+
+    &__texto {
+      @include make-col(4);
+      margin-left: percentage(3/12);
+      margin-right: percentage(1/12);
+      order: 0;
+
+      .detalhe-topo {
+        left: -406px;
+
+        img {
+          width: 380px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1700px) {
+    &__texto {
+      .detalhe-topo {
+        left: -434px;
+
+        img {
+          width: 380px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1800px) {
+    &__texto {
+      .detalhe-topo {
+        left: -434px;
+
+        img {
+          width: 380px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1800px) {
+    &__texto {
+      .detalhe-topo {
+        left: -503px;
+
+        img {
+          width: 380px;
+        }
+      }
+    }
+  }
+}
+
+.beleza-fantastica {
+  @extend .col-12;
+  padding: 0;
+  padding-top: 2rem;
+
+  &__titulo {
+    @extend .col-12;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+    h2 {
+      color: $dark-blue;
+      text-transform: uppercase;
+      font-size: 1em;
+      margin: 0;
+    }
+
+    p {
+      color: $purple;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 1.1em;
+    }
+
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+      h2 {
+        font-size: 1.5em;
+      }
+
+      p {
+        font-size: 2em;
+      }
+    }
+  }
+
+  &__conteudo {
+    @extend .col-12;
+
+    .beleza-fantastica__item {
+      @extend .col-12;
+      padding: 0;
+      margin-bottom: 3rem;
+
+      &-foto {
+        position: relative;
+        @extend .col-12;
+        padding: 0;
+        height: 200px;
+        overflow: hidden;
+
+        img {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          height: 100%;
+          width: auto;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      &-infos {
+        @extend .col-12;
+        padding: 0;
+        padding-top: 2rem;
+
+        span {
+          width: 100%;
+        }
+
+        .titulo-destaque {
+          @extend .col-12;
+          padding: 0;
+
+          h3 {
+            text-transform: uppercase;
+            font-weight: bold;
+            color: $dark-blue;
+            position: relative;
+            font-size: 1.3em;
+          }
+
+          span {
+            color: $dark-blue;
+            position: absolute;
+            top: -12px;
+            left: -4px;
+            font-size: 1.8em;
+            opacity: 0.1;
+            font-weight: bold;
+            text-transform: uppercase;
+          }
+        }
+
+        ul {
+          padding-left: 14px;
+          li {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            color: $gray;
+            &:before {
+              content: "•";
+              color: $purple;
+              font-size: 1.6em;
+              margin-right: 5px;
+            }
+          }
+        }
+        a {
+          margin-left: 14px;
+          background: $purple;
+          color: $white;
+          font-weight: 900;
+          padding: 10px 30px;
+          border-radius: 25px;
+          text-transform: uppercase;
+          text-decoration: none;
+          transition: 0.2s;
+          &:hover {
+            box-shadow: 0px 2px 8px rgba(133, 114, 177, 0.7);
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: map-get($grid-breakpoints, sm)) {
+    &__conteudo {
+      .beleza-fantastica__item {
+        &-foto {
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: map-get($grid-breakpoints, md)) {
+    &__conteudo {
+      padding: 0;
+
+      .beleza-fantastica__item {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 0rem;
+
+        &:nth-child(even) {
+          .beleza-fantastica__item-foto {
+            order: 1;
+          }
+
+          .beleza-fantastica__item-infos {
+            order: 0;
+            text-align: right;
+            display: flex;
+            justify-content: flex-end;
+            padding-left: percentage(0/12);
+            padding-right: percentage(1/12);
+
+            ul {
+              display: flex;
+              flex-wrap: wrap;
+              flex-direction: column;
+              align-items: flex-end;
+            }
+          }
+        }
+
+        &-foto {
+          @include make-col(6);
+          height: auto;
+          img {
+            width: auto;
+            height: 100%;
+          }
+        }
+
+        &-infos {
+          @include make-col(6);
+          padding-left: percentage(1/12);
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  @media (min-width: map-get($grid-breakpoints, lg)) {
+    &__conteudo {
+      .beleza-fantastica__item {
+        &-foto {
+          @include make-col(6);
+          height: auto;
+          img {
+            width: auto;
+            height: 100%;
+          }
+        }
+
+        &-infos {
+          @include make-col(6);
+          padding-left: percentage(0.5/12);
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  @media (min-width: map-get($grid-breakpoints, xl)) {
+    &__conteudo {
+      .beleza-fantastica__item {
+        &-foto {
+          @include make-col(6);
+          height: auto;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        &-infos {
+          @include make-col(6);
+          padding-left: percentage(0.5/12);
+          padding-top: 3rem;
+          padding-bottom: 3rem;
+        }
+      }
+    }
+  }
+}
+
+.divisao-interna {
+  @extend .col-12;
+  padding: 0;
+  height: 400px;
+  background: black;
+  color: $white;
+  margin-bottom: 2rem;
+
+  .alinha {
+    @extend .col-12;
+    padding: 0;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  h2 {
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-size: 600;
+  }
+
+  span {
+    font-family: "Mark My Words";
+    font-size: 1.3em;
+    display: block;
+  }
+
+  button {
+    border: 1px solid $white;
+    font-weight: 900;
+    background: transparent;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    color: $white;
+    margin-top: 2rem;
+    transition: 0.2s;
+    line-height: 25px;
+    position: relative;
+    outline: 0;
+
+    i {
+      margin-left: 5px;
+      transition: all 1.1s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    &:hover {
+      box-shadow: 0px 2px 8px rgba(255, 255, 255, 0.4);
+      background: $white;
+      color: $dark-blue;
+      border: 1px solid $dark-blue;
+
+      i {
+        transform: translateX(5px);
+      }
+    }
+  }
+
+  &.exilis {
+    background: url(../../../reviderma/img/bg-exilis.png) no-repeat top center;
+    background-size: cover;
+  }
+
+  &.xwave {
+    background: url(../../../reviderma/img/bg-xwave.jpg) no-repeat center;
+    background-size: cover;
+  }
+
+  @media (min-width: map-get($grid-breakpoints, sm)) {
+    h2 {
+      font-size: 2.5em;
+    }
+
+    span {
+      font-size: 3em;
+    }
+  }
+
+  @media (min-width: map-get($grid-breakpoints, md)) {
+    height: 500px;
+    .alinha {
+      height: 500px;
+    }
+  }
+}
