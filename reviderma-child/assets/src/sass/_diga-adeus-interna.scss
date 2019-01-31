@@ -174,7 +174,7 @@
         }
 
         &-infos {
-          @include make-col(5);
+          @include make-col(6);
           padding-left: percentage(1/12);
           display: flex;
           flex-wrap: wrap;

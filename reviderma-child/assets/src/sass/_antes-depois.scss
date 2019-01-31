@@ -1,0 +1,24 @@
+.antes-depois {
+  @extend .col-12;
+  padding: 0;
+
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+
+  img {
+    @extend .img-fluid;
+  }
+
+  @media (min-width: map-get($grid-breakpoints, lg )) {
+    @include make-col(11);
+    margin: 2rem auto 4rem auto;
+  }
+
+  @media (min-width: map-get($grid-breakpoints, xl)) {
+    @include make-col(8);
+  }
+
+  @media (min-width: 1500px) {
+    @include make-col(6);
+  }
+}

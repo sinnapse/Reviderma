@@ -1,0 +1,121 @@
+.deixe-sua-mensagem {
+  @extend .col-12;
+  padding: 0;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background: $purple;
+  color: $white;
+
+  &__titulo {
+    @extend .col-12;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+
+    h2 {
+      font-size: 1.6em;
+    }
+  }
+
+  &__conteudo {
+    @extend .col-12;
+    padding: 0;
+
+    form {
+      @extend .col-12;
+      padding: 0;
+
+      .nome,
+      .telefone,
+      .mensagem,
+      .enviar {
+        @extend .col-12;
+        padding: 0;
+        margin-bottom: 1rem;
+      }
+
+      .enviar {
+        text-align: center;
+      }
+
+      input {
+        @extend .col-12;
+        padding: 0;
+        border-radius: 25px;
+        border: 0;
+        padding: 10px 15px;
+        outline: 0;
+        font-size: 0.875em;
+        caret-color: $purple;
+        color: $purple;
+        border: 2px solid transparent;
+
+        &::-webkit-input-placeholder {
+          text-transform: uppercase;
+          font-weight: bold;
+          color: $purple;
+        }
+
+        &:focus {
+          box-shadow: 0px 2px 8px darken($purple, 10%);
+          border: 2px solid darken($purple, 10%);
+        }
+
+        &[type="submit"] {
+          width: auto;
+          background: $dark-blue;
+          color: $white;
+          text-transform: uppercase;
+          font-weight: 900;
+          padding: 14px 58px;
+          transition: 0.3s;
+
+          &:hover {
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
+          }
+        }
+      }
+
+      textarea {
+        @extend .col-12;
+        padding: 0;
+        border-radius: 25px;
+        border: 0;
+        padding: 10px 15px;
+        height: 80px;
+        font-size: 0.875em;
+        outline: 0;
+        caret-color: $purple;
+        color: $purple;
+        border: 2px solid transparent;
+
+        &::-webkit-input-placeholder {
+          text-transform: uppercase;
+          font-weight: bold;
+          color: $purple;
+        }
+
+        &:focus {
+          box-shadow: 0px 2px 8px darken($purple, 10%);
+          border: 2px solid darken($purple, 10%);
+        }
+      }
+    }
+  }
+
+  @media (min-width: map-get($grid-breakpoints, md)) {
+    &__conteudo {
+      form {
+        .nome {
+          max-width: calc(50% - 5px);
+          margin-right: 5px;
+        }
+        .telefone {
+          max-width: calc(50% - 5px);
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}

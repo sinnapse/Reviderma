@@ -543,6 +543,81 @@ header {
       }
     }
 
+    &.tratamento-facial-exilis {
+      background: url(../../../reviderma/img/bg-tratamento-facial-exilis.png)
+        no-repeat center;
+      background-size: cover;
+
+      color: $white;
+
+      .alinha {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @extend .col-12;
+        padding: 0;
+        height: 60vh;
+      }
+    }
+
+    &.tratamento-facial-capilar {
+      background: url(../../../reviderma/img/bg-tratamento-capilar.png)
+        no-repeat center;
+      background-size: cover;
+
+      color: $white;
+
+      .alinha {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @extend .col-12;
+        padding: 0;
+        height: 60vh;
+      }
+    }
+
+    &.tratamento-intimo {
+      background: url(../../../reviderma/img/bg-tratamento-intimo.png) no-repeat
+        center;
+      background-size: cover;
+
+      color: $white;
+
+      .alinha {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @extend .col-12;
+        padding: 0;
+        height: 60vh;
+      }
+    }
+
+    &.contato {
+      background: url(../../../reviderma/img/bg-contato.png) no-repeat center;
+      background-size: cover;
+
+      color: $white;
+
+      .alinha {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @extend .col-12;
+        padding: 0;
+        height: 60vh;
+      }
+    }
+
     &.slide1 {
       background: url(../../../reviderma/img/slide.png) no-repeat center;
       background-size: cover;

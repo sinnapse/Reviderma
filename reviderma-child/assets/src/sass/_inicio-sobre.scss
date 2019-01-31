@@ -1,0 +1,210 @@
+.inicio-sobre {
+  @extend .col-12;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__foto {
+    @extend .col-12;
+    padding: 0;
+    height: 247px;
+    overflow: hidden;
+    background: url(../../../reviderma/img/reviderma-local.png) no-repeat center;
+    background-size: cover;
+    img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      height: auto;
+      width: 100%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__texto {
+    @extend .col-12;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: relative;
+
+    .detalhe-topo {
+      @extend .col-12;
+      padding: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+
+      img {
+        width: 60px;
+        opacity: 0.2;
+      }
+    }
+
+    h2 {
+      color: $dark-blue;
+      margin-bottom: 1rem;
+
+      strong {
+        color: $purple;
+        text-transform: uppercase;
+      }
+    }
+
+    p {
+      color: $gray;
+      font-weight: 500;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    a {
+      margin-top: 2rem;
+      display: inline-block;
+      background: $purple;
+      border-radius: 25px;
+      padding: 14px 30px;
+      color: $white;
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 0.9375em;
+      text-decoration: none;
+      transition: 0.2s;
+
+      &:hover {
+        transition: 0.2s;
+        box-shadow: 0px 2px 8px $purple;
+      }
+    }
+  }
+
+  @media (min-width: map-get($grid-breakpoints, md)) {
+    &__foto {
+      @include make-col(6);
+      height: auto;
+      order: 1;
+    }
+    &__texto {
+      @include make-col(6);
+      order: 0;
+    }
+  }
+
+  @media (min-width: map-get($grid-breakpoints, xl)) {
+    &__foto {
+      @include make-col(6);
+      height: auto;
+      order: 1;
+    }
+    &__texto {
+      @include make-col(5);
+      margin-left: percentage(1/12);
+      order: 0;
+
+      .detalhe-topo {
+        left: -97px;
+
+        img {
+          width: 119px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1338px) {
+    &__texto {
+      @include make-col(4);
+      margin-left: percentage(1/12);
+      margin-right: percentage(1/12);
+      order: 0;
+
+      .detalhe-topo {
+        left: -97px;
+
+        img {
+          width: 119px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1425px) {
+    &__foto {
+      @include make-col(5);
+    }
+
+    &__texto {
+      @include make-col(4);
+      margin-left: percentage(2/12);
+      margin-right: percentage(1/12);
+      order: 0;
+
+      .detalhe-topo {
+        left: -235px;
+
+        img {
+          width: 235px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1600px) {
+    &__foto {
+      @include make-col(4);
+    }
+
+    &__texto {
+      @include make-col(4);
+      margin-left: percentage(3/12);
+      margin-right: percentage(1/12);
+      order: 0;
+
+      .detalhe-topo {
+        left: -406px;
+
+        img {
+          width: 380px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1700px) {
+    &__texto {
+      .detalhe-topo {
+        left: -434px;
+
+        img {
+          width: 380px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1800px) {
+    &__texto {
+      .detalhe-topo {
+        left: -434px;
+
+        img {
+          width: 380px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1800px) {
+    &__texto {
+      .detalhe-topo {
+        left: -503px;
+
+        img {
+          width: 380px;
+        }
+      }
+    }
+  }
+}
