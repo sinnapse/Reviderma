@@ -14,21 +14,21 @@
 					<ul>
 						<div class="row no-gutters">
 							<div class="item-menu">
-								<li><a href="#">Sobre Nós</a></li>
-								<li><a href="#">Tratamento Corporal</a></li>
-								<li><a href="#">Tratamento Facial</a></li>
+								<li><a href="<?php echo bloginfo('url'); ?>">Sobre Nós</a></li>
+								<li><a href="<?php echo bloginfo('url'); ?>/tratamento-corporal/">Tratamento Corporal</a></li>
+								<li><a href="<?php echo bloginfo('url'); ?>/tratamento-facial-exilis/">Tratamento Facial</a></li>
 							</div><!-- /.item-menu -->
 
 							<div class="item-menu">
-								<li><a href="#">Tratamento de Pele</a></li>
-								<li><a href="#">Tratamento Íntimo</a></li>
-								<li><a href="#">Blog</a></li>
+								<li><a href="<?php echo bloginfo('url'); ?>/tratamento-capilar/">Tratamento de Capilar</a></li>
+								<li><a href="<?php echo bloginfo('url'); ?>/tratamento-intimo/">Tratamento Íntimo</a></li>
+								<li><a href="<?php echo bloginfo('url'); ?>/blog">Blog</a></li>
 							</div><!-- /.item-menu -->
 
 							<div class="item-menu">
-								<li><a href="#">Contato</a></li>
-								<li><a href="#">Newsletter</a></li>
-								<li><a href="#">Redes Sociais</a></li>
+								<li><a href="<?php echo bloginfo('url'); ?>/contato">Contato</a></li>
+								<li><a href="javascript:void(0)">Newsletter</a></li>
+								<li><a href="javascript:void(0)">Redes Sociais</a></li>
 							</div><!-- /.item-menu -->
 						</div><!-- /.row no-gutters -->
 					</ul>

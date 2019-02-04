@@ -19,6 +19,15 @@
 	<body>
 		<h1 class="logo_text">Reviderma</h1>
 
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.2&appId=238372556544604&autoLogAppEvents=1';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
 		<!-- INICIO HEADER -->
 		<header>
 
@@ -41,13 +50,13 @@
 
               <div class="content-menu">
                 <ul>
-                  <li class="item-hbg"><a href="javascript: void(0)">Sobre Nós</a></li>
-                  <li class="item-hbg"><a href="javascript: void(0)">Tratamento Corporal</a></li>
-                  <li class="item-hbg"><a href="javascript: void(0)">Tratamento Facial</a></li>
-                  <li class="item-hbg"><a href="javascript: void(0)">Tratamento Capilar</a></li>
-                  <li class="item-hbg"><a href="javascript: void(0)">Tratamento Íntimo</a></li>
-                  <li class="item-hbg"><a href="javascript: void(0)">Blog</a></li>
-                  <li class="item-hbg"><a href="javascript: void(0)">Contato</a></li>
+                  <li class="item-hbg"><a href="<?php echo bloginfo('url'); ?>">Sobre Nós</a></li>
+                  <li class="item-hbg"><a href="<?php echo bloginfo('url'); ?>/tratamento-corporal/">Tratamento Corporal</a></li>
+                  <li class="item-hbg"><a href="<?php echo bloginfo('url'); ?>/tratamento-facial-exilis/">Tratamento Facial</a></li>
+                  <li class="item-hbg"><a href="<?php echo bloginfo('url'); ?>/tratamento-capilar/">Tratamento Capilar</a></li>
+                  <li class="item-hbg"><a href="<?php echo bloginfo('url'); ?>/tratamento-intimo/">Tratamento Íntimo</a></li>
+                  <li class="item-hbg"><a href="<?php echo bloginfo('url'); ?>/blog">Blog</a></li>
+                  <li class="item-hbg"><a href="<?php echo bloginfo('url'); ?>/contato">Contato</a></li>
                 </ul>
 
                 <div class="sociais">

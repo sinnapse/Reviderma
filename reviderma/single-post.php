@@ -1,5 +1,5 @@
 <?php 
-/* Template Name: Blog */
+/* Template Name: Tratamento Coporal */
 get_header('intern'); ?>
 
   <!-- INICIO SLIDER -->
@@ -7,8 +7,9 @@ get_header('intern'); ?>
     <div class="item post" style="background: url('<?= get_the_post_thumbnail_url(); ?>'); background-position: center center; background-size: cover;">
       <div class="container">
         <div class="alinha">
-					<h2>Categorias</h2>
-					<p><?php _e( ' ', 'blank' ); single_cat_title(); ?></p>
+          <h2><?php the_field('titulo'); ?></h2>
+          <span><?php the_field('sub_titulo'); ?></span>
+          <p><?php the_time('j \d\e F, Y') ?></p>
         </div><!-- /alinha -->
       </div><!-- /container -->
     </div><!-- /item -->
@@ -18,72 +19,23 @@ get_header('intern'); ?>
 <!-- FIM HEADER -->
 
 <!-- INICIO MAIN -->
-<main>
+<main style='padding-top: 2rem'>
 
-  <!-- INICIO BLOG -->
-  <div class='blog-page'>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+  <!-- INICIO CONTEUDO POST -->
+  <section>
+  <div class='conteudo-post'>
     <div class='container'>
       <div class='row no-gutters'>
-        <div class="blog__esq">
-
-          <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-            <div class="item-post">
-              <img src="<?= get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
-              <div class="descricao">
-                <span>
-                  <p><?php the_time('j \d\e F, Y') ?></p>
-                  <a href="<?php the_permalink(); ?>">
-                    <?php the_title(); ?>
-                  </a>
-                </span>
-              </div>
-            </div><!-- /item-post -->
-						<?php endwhile; else: ?>
-							<p><?php _e('Desculpa, não encontramos nada.'); ?></p>
-						<?php endif; ?>	
-
-          <div class="navegacao">
-            <?php wp_pagenavi(); ?>
-          </div><!-- /navegacao -->
-        
-        </div><!-- /.blog__esq -->
-
-        <div class="blog__dir">
-          <?php get_search_form(); ?>
-
-          <div class="categorias">
-            <h3>Categorias</h3>
-            <ul>
-            <?php 
-              $args = array (
-                'parent' => 0,
-              );
-
-              $categories = get_categories($args);
-
-
-              foreach($categories as $category) {
-                echo '<li id="'. $category->slug .'"> <a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a></li>';
-              }
-
-            ?>
-            </ul>
-          </div><!-- /categorias -->
-
-          <div class="facebook">
-            <h3>Facebook</h3>
-
-            <div class="facebook__conteudo">
-              <div class="fb-page" data-href="https://www.facebook.com/reviderma/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/reviderma/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/reviderma/">Reviderma</a></blockquote></div>
-            </div><!-- /.facebook__conteudo -->
-          </div><!-- /.facebook -->
-
-        </div><!-- /.blog__dir -->
-
+        <?php the_content();?>
       </div><!-- /row -->
     </div><!-- /container -->
-  </div><!-- /blog -->
-  <!-- FIM BLOG -->
+  </div><!-- /conteudo-post -->
+  </section>
+  <!-- FIM CONTEUDO POST -->
+
+<?php endwhile; else: ?>
+<?php endif; ?>
 
   <!-- INICIO DEPOIMENTOS -->
   <section>

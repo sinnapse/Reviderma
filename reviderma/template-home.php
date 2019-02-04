@@ -34,7 +34,7 @@
 
 								<h3>Redução de Flacidez</h3>
 								
-								<a href="#">
+								<a href="<?php echo bloginfo('url'); ?>/tratamento-corporal">
 									<button>
 										Eu Quero
 									</button>
@@ -70,7 +70,7 @@
 
 								<h3>Perda de Gordura</h3>
 								
-								<a href="#">
+								<a href="<?php echo bloginfo('url'); ?>/tratamento-corporal">
 									<button>
 										Eu Quero
 									</button>
@@ -114,7 +114,7 @@
 
 								<h3>Redução de Celulite</h3>
 								
-								<a href="#">
+								<a href="<?php echo bloginfo('url'); ?>/tratamento-corporal">
 									<button>
 										Eu Quero
 									</button>
@@ -152,7 +152,7 @@
 
 								<h3>Rosto Perfeito</h3>
 								
-								<a href="#">
+								<a href="<?php echo bloginfo('url'); ?>/tratamento-facial">
 									<button>
 										Eu Quero
 									</button>
@@ -182,7 +182,7 @@
 							
 								<h3>Tratamento Íntimo</h3>
 								
-								<a href="#">
+								<a href="<?php echo bloginfo('url'); ?>/tratamento-intimo">
 									<button>
 										Eu Quero
 									</button>
@@ -203,13 +203,13 @@
 										<path id="Path_195" data-name="Path 195" d="M-584.675,983.452a3.331,3.331,0,0,0,3.519-2.217l1.865-5.9a2.226,2.226,0,0,0-1.875-2.977,3.349,3.349,0,0,0-3.384,1.878l-4.685-7.188a2.744,2.744,0,0,0-3.815-.537,2.744,2.744,0,0,0-1.161,3.673l4.685,7.188a3.347,3.347,0,0,0-3.154,2.242,2.226,2.226,0,0,0,1.876,2.977Z" transform="translate(1851.008 406.351)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" class="UHKylWCm_4"></path>
 										<path id="Path_196" data-name="Path 196" d="M-561.159,976.08a3.33,3.33,0,0,0,3.518-2.217l1.866-5.9a2.226,2.226,0,0,0-1.876-2.977,3.349,3.349,0,0,0-3.384,1.878l-4.685-7.188a2.743,2.743,0,0,0-3.815-.537,2.745,2.745,0,0,0-1.161,3.673l4.685,7.188a3.347,3.347,0,0,0-3.153,2.242,2.226,2.226,0,0,0,1.875,2.977Z" transform="translate(1847.085 407.581)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" class="UHKylWCm_5"></path>
 									</g>
-									<style data-made-with="vivus-instant">.UHKylWCm_0{stroke-dasharray:313 315;stroke-dashoffset:314;}.start .UHKylWCm_0{animation:UHKylWCm_draw 2000ms linear 0ms forwards;}.UHKylWCm_1{stroke-dasharray:370 372;stroke-dashoffset:371;}.start .UHKylWCm_1{animation:UHKylWCm_draw 2000ms linear 200ms forwards;}.UHKylWCm_2{stroke-dasharray:171 173;stroke-dashoffset:172;}.start .UHKylWCm_2{animation:UHKylWCm_draw 2000ms linear 400ms forwards;}.UHKylWCm_3{stroke-dasharray:92 94;stroke-dashoffset:93;}.start .UHKylWCm_3{animation:UHKylWCm_draw 2000ms linear 600ms forwards;}.UHKylWCm_4{stroke-dasharray:59 61;stroke-dashoffset:60;}.start .UHKylWCm_4{animation:UHKylWCm_draw 2000ms linear 800ms forwards;}.UHKylWCm_5{stroke-dasharray:59 61;stroke-dashoffset:60;}.start .UHKylWCm_5{animation:UHKylWCm_draw 2000ms linear 1000ms forwards;}@keyframes UHKylWCm_draw{100%{stroke-dashoffset:0;}}@keyframes UHKylWCm_fade{0%{stroke-opacity:1;}94.44444444444444%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style>
+									<style data-made-with="vivus-instant">.UHKylWCm_0{stroke-dasharray:313 315;stroke-dashoffset:314;}.start .UHKylWCm_0{animation:UHKylWCm_draw 1000ms linear 0ms forwards;}.UHKylWCm_1{stroke-dasharray:370 372;stroke-dashoffset:371;}.start .UHKylWCm_1{animation:UHKylWCm_draw 1000ms linear 200ms forwards;}.UHKylWCm_2{stroke-dasharray:171 173;stroke-dashoffset:172;}.start .UHKylWCm_2{animation:UHKylWCm_draw 1000ms linear 400ms forwards;}.UHKylWCm_3{stroke-dasharray:92 94;stroke-dashoffset:93;}.start .UHKylWCm_3{animation:UHKylWCm_draw 1000ms linear 600ms forwards;}.UHKylWCm_4{stroke-dasharray:59 61;stroke-dashoffset:60;}.start .UHKylWCm_4{animation:UHKylWCm_draw 1000ms linear 800ms forwards;}.UHKylWCm_5{stroke-dasharray:59 61;stroke-dashoffset:60;}.start .UHKylWCm_5{animation:UHKylWCm_draw 1000ms linear 1000ms forwards;}@keyframes UHKylWCm_draw{100%{stroke-dashoffset:0;}}@keyframes UHKylWCm_fade{0%{stroke-opacity:1;}94.44444444444444%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style>
 								</svg>
 
 							
-								<h3>Tratamento Íntimo</h3>
+								<h3>Tratamento Capilar</h3>
 								
-								<a href="#">
+								<a href="<?php echo bloginfo('url'); ?>/tratamento-capilar">
 									<button>
 										Eu Quero
 									</button>
@@ -265,7 +265,7 @@
 							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at.
 						</p>
 
-						<a href="#">Nossos Tratamentos</a>
+						<a href="<?php echo bloginfo('url'); ?>/tratamento-corporal">Nossos Tratamentos</a>
 					</div><!-- /.inicio-sobre__texto -->
 
 			</div><!-- /inicio-sobre -->
@@ -312,7 +312,7 @@
 											<li>Rejuvenescimento Facila</li>
 										</ul>
 
-										<a href="javascript:void(0)">
+										<a href="<?php echo bloginfo('url'); ?>/contato">
 											Eu Quero
 										</a>
 									</span>
@@ -340,7 +340,7 @@
 											<li>Redução da Circunferência</li>
 										</ul>
 
-										<a href="javascript:void(0)">
+										<a href="<?php echo bloginfo('url'); ?>/contato">
 											Eu Quero
 										</a>
 									</span>
@@ -369,7 +369,7 @@
 											<li>Redução de Cicatrizes</li>
 										</ul>
 
-										<a href="javascript:void(0)">
+										<a href="<?php echo bloginfo('url'); ?>/contato">
 											Eu Quero
 										</a>
 									</span>
@@ -389,7 +389,7 @@
 		<!-- INICIO DIVISAO INICIO -->
 		<div class='divisao-inicio'>
 				<p>A sua melhor versão</p>
-				<a href="#">Nossos tratamentos</a>
+				<a href="<?php echo bloginfo('url'); ?>/tratamento-corporal">Nossos tratamentos</a>
 		</div><!-- /divisao-inicio -->
 		<!-- FIM DIVISAO INICIO -->
 
@@ -422,7 +422,7 @@
 												<li>Recupere Auto-estima</li>
 											</ul>
 
-											<a href="javascript:void(0)">
+											<a href="<?php echo bloginfo('url'); ?>/tratamento-intimo/">
 												Eu Quero
 											</a>
 										</span>
@@ -463,7 +463,7 @@
 											<li>Para faces, colo e pescoço</li>
 										</ul>
 
-										<a href="javascript:void(0)">
+										<a href="<?php echo bloginfo('url'); ?>/contato">
 											Eu Quero
 										</a>
 									</span>
@@ -488,7 +488,7 @@
 											<li>Aspecto jovem e natural</li>
 										</ul>
 
-										<a href="javascript:void(0)">
+										<a href="<?php echo bloginfo('url'); ?>/contato">
 											Eu Quero
 										</a>
 									</span>
@@ -513,7 +513,7 @@
 											<li>Melhora o aspecto do rosto</li>
 										</ul>
 
-										<a href="javascript:void(0)">
+										<a href="<?php echo bloginfo('url'); ?>/contato">
 											Eu Quero
 										</a>
 									</span>
@@ -538,7 +538,7 @@
 											<li>Elimina a flacidez da pele</li>
 										</ul>
 
-										<a href="javascript:void(0)">
+										<a href="<?php echo bloginfo('url'); ?>/contato">
 											Eu Quero
 										</a>
 									</span>
@@ -547,14 +547,14 @@
 
 							<div class="beleza-fantastica__item">
 								<div class="beleza-fantastica__item-foto">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/beleza-fantastica4.png" alt="Beleza Fantástica">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/beleza-fantastica6.png" alt="Beleza Fantástica">
 								</div><!-- /beleza-fantastica__item-foto -->
 
 								<div class="beleza-fantastica__item-infos">
 									<span>
 										<div class="titulo-destaque">
-											<h3>PEELING QUÍMICO E DE CRISTAL</h3>
-											<span>PEELING QUÍMICO E DE CRISTAL</span>
+											<h3>PEELING QUÍMICO E DE DIAMANTE</h3>
+											<span>PEELING QUÍMICO E DE DIAMANTE</span>
 										</div><!-- /titulo-destaque -->
 
 										<ul>
@@ -563,7 +563,7 @@
 											<li>Redução da oleosidade da pele</li>
 										</ul>
 
-										<a href="javascript:void(0)">
+										<a href="<?php echo bloginfo('url'); ?>/contato">
 											Eu Quero
 										</a>
 									</span>
@@ -588,7 +588,7 @@
 											<li>Suavização do envelhecimento da pele</li>
 										</ul>
 
-										<a href="javascript:void(0)">
+										<a href="<?php echo bloginfo('url'); ?>/contato">
 											Eu Quero
 										</a>
 									</span>
@@ -639,91 +639,39 @@
 
 						<div class="blog__conteudo">
 							<div class='lista-posts owl-carousel owl-theme'>
+								<?php
+									$args = array (
+										'post_type' => 'post', 
+										'orderby'=> 'title',
+										'order' => 'ASC',
+										'posts_per_page' => '5'
+									);
+									
+									$the_query = new WP_Query ( $args );
+								?>
 
-								<div class="item">
-									<div class="item-post">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/post1.png" alt="post1">
-										<div class="descricao">
-											<span>
-												<p>13,Dez 2018</p>
-												<a href="#">
-													Quais os cuidados que deve ter com sua pele?
-												</a>
-											</span>
-										</div>
-									</div><!-- /item-post -->
-								</div><!-- /item -->
-							
-								<div class="item">
-									<div class="item-post">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/post2.png" alt="post2">
-										<div class="descricao">
-											<span>
-												<p>13,Dez 2018</p>
-												<a href="#">
-													Quer perder 60% de gordura corporal ?
-												</a>
-											</span>
-										</div>
-									</div><!-- /item-post -->
-								</div><!-- /item -->
-							
-								<div class="item">
-									<div class="item-post">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/post3.png" alt="post3">
-										<div class="descricao">
-											<span>
-												<p>13,Dez 2018</p>
-												<a href="#">
-													Qual o melhor creme para sua pele ?
-												</a>
-											</span>
-										</div>
-									</div><!-- /item-post -->
-								</div><!-- /item -->
-							
-								<div class="item">
-									<div class="item-post">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/post4.png" alt="post4">
-										<div class="descricao">
-											<span>
-												<p>13,Dez 2018</p>
-												<a href="#">
-													Qual o melhor creme para sua pele?
-												</a>
-											</span>
-										</div>
-									</div><!-- /item-post -->
-								</div><!-- /item -->
-							
-								<div class="item">
-									<div class="item-post">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/post5.png" alt="post5">
-										<div class="descricao">
-											<span>
-												<p>13,Dez 2018</p>
-												<a href="#">
-													Consulte o dermatologista para saber qual a melhor opção
-												</a>
-											</span>
-										</div>
-									</div><!-- /item-post -->
-								</div><!-- /item -->
-							
-								<div class="item">
-									<div class="item-post">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/post5.png" alt="post5">
-										<div class="descricao">
-											<span>
-												<p>13,Dez 2018</p>
-												<a href="#">
-													Consulte o dermatologista para saber qual a melhor opção
-												</a>
-											</span>
-										</div>
-									</div><!-- /item-post -->
-								</div><!-- /item -->
-								
+								<?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+
+									<div class="item">
+										<div class="item-post">
+											<a href="<?php the_permalink(); ?>">
+												<img src="<?= get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
+												<div class="descricao">
+													<span>
+														<p>13,Dez 2018</p>
+														
+														<p class='titulo'><?php the_title(); ?></p>
+													
+													</span>
+												</div><!-- /descricao -->
+											</a>
+										</div><!-- /item-post -->
+									</div><!-- /item -->
+
+								<?php endwhile; ?>
+								<?php endif; ?>
+										
 							</div><!-- /lista-posts -->
 						</div><!-- /blog__conteudo -->
 

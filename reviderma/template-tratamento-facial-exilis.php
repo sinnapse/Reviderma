@@ -10,9 +10,11 @@ get_header('intern'); ?>
           <h2>Pele</h2>
           <span>Perfeitamente Completa</span>
 
-          <button>
-            Eu quero <i class="fas fa-arrow-right"></i>
-          </button>
+          <a href="<?php echo bloginfo('url'); ?>/contato">
+            <button>
+              Eu quero <i class="fas fa-arrow-right"></i>
+            </button>
+          </a>
         </div><!-- /alinha -->
       </div><!-- /container -->
     </div><!-- /item -->
@@ -53,7 +55,7 @@ get_header('intern'); ?>
                     <li>Para faces, colo e pescoço</li>
                   </ul>
 
-                  <a href="javascript:void(0)">
+                  <a href="<?php echo bloginfo('url'); ?>/contato">
                     Eu Quero
                   </a>
                 </span>
@@ -78,7 +80,7 @@ get_header('intern'); ?>
                     <li>Aspecto jovem e natural</li>
                   </ul>
 
-                  <a href="javascript:void(0)">
+                  <a href="<?php echo bloginfo('url'); ?>/contato">
                     Eu Quero
                   </a>
                 </span>
@@ -103,7 +105,7 @@ get_header('intern'); ?>
                     <li>Melhora o aspecto do rosto</li>
                   </ul>
 
-                  <a href="javascript:void(0)">
+                  <a href="<?php echo bloginfo('url'); ?>/contato">
                     Eu Quero
                   </a>
                 </span>
@@ -128,7 +130,7 @@ get_header('intern'); ?>
                     <li>Elimina a flacidez da pele</li>
                   </ul>
 
-                  <a href="javascript:void(0)">
+                  <a href="<?php echo bloginfo('url'); ?>/contato">
                     Eu Quero
                   </a>
                 </span>
@@ -137,14 +139,14 @@ get_header('intern'); ?>
 
             <div class="beleza-fantastica__item">
               <div class="beleza-fantastica__item-foto">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/beleza-fantastica4.png" alt="Beleza Fantástica">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/beleza-fantastica6.png" alt="Beleza Fantástica">
               </div><!-- /beleza-fantastica__item-foto -->
 
               <div class="beleza-fantastica__item-infos">
                 <span>
                   <div class="titulo-destaque">
-                    <h3>PEELING QUÍMICO E DE CRISTAL</h3>
-                    <span>PEELING QUÍMICO E DE CRISTAL</span>
+                    <h3>PEELING QUÍMICO E DE DIAMANTE</h3>
+                    <span>PEELING QUÍMICO E DE DIAMANTE</span>
                   </div><!-- /titulo-destaque -->
 
                   <ul>
@@ -153,7 +155,7 @@ get_header('intern'); ?>
                     <li>Redução da oleosidade da pele</li>
                   </ul>
 
-                  <a href="javascript:void(0)">
+                  <a href="<?php echo bloginfo('url'); ?>/contato">
                     Eu Quero
                   </a>
                 </span>
@@ -178,7 +180,7 @@ get_header('intern'); ?>
                     <li>Suavização do envelhecimento da pele</li>
                   </ul>
 
-                  <a href="javascript:void(0)">
+                  <a href="<?php echo bloginfo('url'); ?>/contato">
                     Eu Quero
                   </a>
                 </span>
@@ -199,9 +201,11 @@ get_header('intern'); ?>
         <div class="alinha">
           <h2>Reviderma Exilis</h2>
           <span>Tratamento da Cabeça aos Pés</span>
-          <button>
-            Eu quero <i class="fas fa-arrow-right"></i>
-          </button>
+          <a href="<?php echo bloginfo('url'); ?>/contato">
+            <button>
+              Eu quero <i class="fas fa-arrow-right"></i>
+            </button>
+          </a>
         </div><!-- /.alinha -->
       </div><!-- /container -->
     </div><!-- /divisao-interna -->

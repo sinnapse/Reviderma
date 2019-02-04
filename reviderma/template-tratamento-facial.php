@@ -7,12 +7,14 @@ get_header('intern'); ?>
     <div class="item tratamento-facial">
       <div class="container">
         <div class="alinha">
-          <h2>BTL HOT SUMMER</h2>
+          <h2>REVIDERMA HOT SUMMER</h2>
           <span>Você pronta para o verão</span>
-
-          <button>
-            Eu quero <i class="fas fa-arrow-right"></i>
-          </button>
+					
+					<a href="<?php echo bloginfo('url'); ?>/contato">
+						<button>
+							Eu quero <i class="fas fa-arrow-right"></i>
+						</button>
+					</a>
         </div><!-- /alinha -->
       </div><!-- /container -->
     </div><!-- /item -->
@@ -36,9 +38,8 @@ get_header('intern'); ?>
 
           <div class="las-vegas__dir">
             <p>
-              A Reviderma traz com Exclusividade <br>
-              O Tratamento de Remodelação Corporal que <br>
-              <strong>Elimina em até 60% a gordura abdominal</strong> 
+              Melhor contorno Corporal <br>
+              <strong>ELIMINE ATÉ 60% DE GORDURA <br> EM APENAS 1 MÊS!</strong> 
             </p>
           </div><!-- /.las-vegas__dir -->
         </div><!-- /row -->
@@ -62,7 +63,7 @@ get_header('intern'); ?>
 				</div><!-- /diga-adeus__rodape -->
 
 				<div class="diga-adeus__titulo">
-					<h2>Diga Adeus A Celulite</h2>
+					<h2>DIGA ADEUS A CELULITE, GORDURA E FLACIDEZ</h2>
 					<p>Sem Dor e Sem Desconforto</p>
 				</div><!-- /.diga-adeus__titulo -->
 
@@ -77,8 +78,8 @@ get_header('intern'); ?>
 							<div class="diga-adeus__item-infos">
 								<span>
 									<div class="titulo-destaque">
-										<h3>BTL Exilis Elite®</h3>
-										<span>BTL Exilis Elite®</span>
+										<h3>BTL Exilis Elite</h3>
+										<span>BTL Exilis Elite</span>
 									</div><!-- /titulo-destaque -->
 
 									<ul>
@@ -87,7 +88,7 @@ get_header('intern'); ?>
 										<li>Rejuvenescimento Facila</li>
 									</ul>
 
-									<a href="javascript:void(0)">
+									<a href="<?php echo bloginfo('url'); ?>/contato">
 										Eu Quero
 									</a>
 								</span>
@@ -105,8 +106,8 @@ get_header('intern'); ?>
 							<div class="diga-adeus__item-infos">
 								<span>
 									<div class="titulo-destaque">
-										<h3>BTL Vanquish®</h3>
-										<span>BTL Vanquish®</span>
+										<h3>BTL Vanquish</h3>
+										<span>BTL Vanquish</span>
 									</div><!-- /titulo-destaque -->
 
 									<ul>
@@ -115,7 +116,7 @@ get_header('intern'); ?>
 										<li>Redução da Circunferência</li>
 									</ul>
 
-									<a href="javascript:void(0)">
+									<a href="<?php echo bloginfo('url'); ?>/contato">
 										Eu Quero
 									</a>
 								</span>
@@ -134,8 +135,8 @@ get_header('intern'); ?>
 							<div class="diga-adeus__item-infos">
 								<span>
 									<div class="titulo-destaque">
-										<h3>BTL xWave®</h3>
-										<span>BTL xWave®</span>
+										<h3>BTL xWave</h3>
+										<span>BTL xWave</span>
 									</div><!-- /titulo-destaque -->
 
 									<ul>
@@ -144,7 +145,7 @@ get_header('intern'); ?>
 										<li>Redução de Cicatrizes</li>
 									</ul>
 
-									<a href="javascript:void(0)">
+									<a href="<?php echo bloginfo('url'); ?>/contato">
 										Eu Quero
 									</a>
 								</span>

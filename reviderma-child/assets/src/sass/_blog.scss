@@ -71,16 +71,27 @@
       height: 208px;
       overflow: hidden;
       box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.4);
+      transition: all 0.3s ease-in;
+
+      &:hover {
+        .descricao {
+          p.titulo {
+            color: $purple;
+            text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
+          }
+        }
+      }
 
       img {
         position: absolute;
         left: 50%;
         top: 50%;
-        height: auto;
+        height: 100%;
         width: 100%;
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
+        object-fit: cover;
       }
 
       .descricao {
@@ -104,6 +115,10 @@
           padding: 0;
           color: $white;
           margin: 0;
+
+          &.titulo {
+            font-weight: 900;
+          }
         }
 
         a {
@@ -128,37 +143,6 @@
       }
       p {
         font-size: 1.6em;
-      }
-    }
-
-    &__conteudo {
-      .item-post {
-        img {
-          width: auto;
-          height: 100%;
-        }
-      }
-    }
-  }
-
-  @media (min-width: map-get($grid-breakpoints, md)) {
-    &__conteudo {
-      .item-post {
-        img {
-          width: 100%;
-          height: auto;
-        }
-      }
-    }
-  }
-
-  @media (min-width: map-get($grid-breakpoints, md)) {
-    &__conteudo {
-      .item-post {
-        img {
-          width: 100%;
-          height: auto;
-        }
       }
     }
   }

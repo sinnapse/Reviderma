@@ -89,6 +89,7 @@ header {
       padding: 0;
       text-align: left;
       margin: 0;
+
       img {
         @extend .img-fluid;
 
@@ -458,6 +459,38 @@ header {
     }
   }
 
+  .owl-nav {
+    margin-top: 0;
+    button.owl-prev {
+      outline: 0;
+      position: absolute;
+      left: 15px;
+      top: 45%;
+      i {
+        font-size: 1.4em;
+        padding: 5px;
+        color: $dark-blue;
+      }
+      &:hover {
+        background: transparent;
+      }
+    }
+    button.owl-next {
+      outline: 0;
+      position: absolute;
+      right: 15px;
+      top: 45%;
+      i {
+        font-size: 1.4em;
+        padding: 5px;
+        color: $dark-blue;
+      }
+      &:hover {
+        background: transparent;
+      }
+    }
+  }
+
   .item {
     background: purple;
     height: 100vh;
@@ -501,6 +534,26 @@ header {
 
         i {
           transform: translateX(5px);
+        }
+      }
+    }
+
+    &.post {
+      color: $white;
+
+      .alinha {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @extend .col-12;
+        padding: 0;
+        height: 60vh;
+
+        p {
+          text-transform: uppercase;
+          margin: 0;
         }
       }
     }
@@ -675,6 +728,28 @@ header {
 
     &.slide4 {
       background: url(../../../reviderma/img/slide3.png) no-repeat center;
+      background-size: cover;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+
+      h2 {
+        color: $dark-blue;
+      }
+
+      span {
+        color: $purple;
+      }
+      button {
+        color: $dark-blue;
+        border: 1px solid $dark-blue;
+      }
+    }
+
+    &.slide5 {
+      background: url(../../../reviderma/img/slide4.png) no-repeat center;
       background-size: cover;
       display: flex;
       flex-wrap: wrap;

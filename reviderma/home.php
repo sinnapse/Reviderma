@@ -4,11 +4,10 @@ get_header('intern'); ?>
 
   <!-- INICIO SLIDER -->
   <div class='slider intern owl-carousel owl-theme'>
-    <div class="item post" style="background: url('<?= get_the_post_thumbnail_url(); ?>'); background-position: center center; background-size: cover;">
+    <div class="item post" style="background: url('<?php echo get_template_directory_uri(); ?>/img/bg-tratamento-facial.png'); background-position: center center; background-size: cover;">
       <div class="container">
         <div class="alinha">
-					<h2>Categorias</h2>
-					<p><?php _e( ' ', 'blank' ); single_cat_title(); ?></p>
+          <h2>Blog</h2>
         </div><!-- /alinha -->
       </div><!-- /container -->
     </div><!-- /item -->
@@ -24,23 +23,26 @@ get_header('intern'); ?>
   <div class='blog-page'>
     <div class='container'>
       <div class='row no-gutters'>
+
         <div class="blog__esq">
 
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <div class="item-post">
-              <img src="<?= get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
-              <div class="descricao">
-                <span>
-                  <p><?php the_time('j \d\e F, Y') ?></p>
-                  <a href="<?php the_permalink(); ?>">
-                    <?php the_title(); ?>
-                  </a>
-                </span>
-              </div>
+              <a href="<?php the_permalink(); ?>">
+                <img src="<?= get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
+                <div class="descricao">
+                  <span>
+                    <p><?php the_time('j \d\e F, Y') ?></p>
+                    
+                    <p class='titulo'><?php the_title(); ?></p>
+                    <p class='desc'><?php echo excerpt(30); ?></p>
+                  </span>
+                </div>
+              </a>
             </div><!-- /item-post -->
-						<?php endwhile; else: ?>
-							<p><?php _e('Desculpa, não encontramos nada.'); ?></p>
-						<?php endif; ?>	
+          <?php endwhile; else: ?>
+            <p><?php _e('Desculpa, Não há posts.'); ?></p>
+          <?php endif; ?>
 
           <div class="navegacao">
             <?php wp_pagenavi(); ?>

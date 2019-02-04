@@ -10,9 +10,11 @@ get_header('intern'); ?>
           <h2>REVIDERMA ULTRA FEMME</h2>
           <span>Mude Sua Vida em 8 min</span>
 
-          <button>
-            Eu quero <i class="fas fa-arrow-right"></i>
-          </button>
+          <a href="<?php echo bloginfo('url'); ?>/contato">
+            <button>
+              Eu quero <i class="fas fa-arrow-right"></i>
+            </button>
+          </a>
         </div><!-- /alinha -->
       </div><!-- /container -->
     </div><!-- /item -->
@@ -303,7 +305,7 @@ get_header('intern'); ?>
 
 								<h3>Redução de Flacidez</h3>
 								
-								<a href="#">
+								<a href="<?php echo bloginfo('url'); ?>/tratamento-corporal">
 									<button>
 										Eu Quero
 									</button>
@@ -339,7 +341,7 @@ get_header('intern'); ?>
 
 								<h3>Perda de Gordura</h3>
 								
-								<a href="#">
+								<a href="<?php echo bloginfo('url'); ?>/tratamento-corporal">
 									<button>
 										Eu Quero
 									</button>
@@ -383,7 +385,7 @@ get_header('intern'); ?>
 
 								<h3>Redução de Celulite</h3>
 								
-								<a href="#">
+								<a href="<?php echo bloginfo('url'); ?>/tratamento-corporal">
 									<button>
 										Eu Quero
 									</button>
@@ -421,7 +423,7 @@ get_header('intern'); ?>
 
 								<h3>Rosto Perfeito</h3>
 								
-								<a href="#">
+								<a href="<?php echo bloginfo('url'); ?>/tratamento-facial">
 									<button>
 										Eu Quero
 									</button>
@@ -451,15 +453,15 @@ get_header('intern'); ?>
 							
 								<h3>Tratamento Íntimo</h3>
 								
-								<a href="#">
+								<a href="<?php echo bloginfo('url'); ?>/tratamento-intimo">
 									<button>
 										Eu Quero
 									</button>
 								</a>
 
-              </div><!-- /.item-objetivo -->
-              
-              <div class="item-objetivo">
+							</div><!-- /.item-objetivo -->
+
+							<div class="item-objetivo">
 
 								<svg xmlns="http://www.w3.org/2000/svg" width="119.49" height="119.49" viewBox="0 0 119.49 119.49" style="" class="class1">
 									<g id="Symbol_2_1" data-name="Symbol 2 â 1" transform="translate(-1224 -1351)">
@@ -472,13 +474,13 @@ get_header('intern'); ?>
 										<path id="Path_195" data-name="Path 195" d="M-584.675,983.452a3.331,3.331,0,0,0,3.519-2.217l1.865-5.9a2.226,2.226,0,0,0-1.875-2.977,3.349,3.349,0,0,0-3.384,1.878l-4.685-7.188a2.744,2.744,0,0,0-3.815-.537,2.744,2.744,0,0,0-1.161,3.673l4.685,7.188a3.347,3.347,0,0,0-3.154,2.242,2.226,2.226,0,0,0,1.876,2.977Z" transform="translate(1851.008 406.351)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" class="UHKylWCm_4"></path>
 										<path id="Path_196" data-name="Path 196" d="M-561.159,976.08a3.33,3.33,0,0,0,3.518-2.217l1.866-5.9a2.226,2.226,0,0,0-1.876-2.977,3.349,3.349,0,0,0-3.384,1.878l-4.685-7.188a2.743,2.743,0,0,0-3.815-.537,2.745,2.745,0,0,0-1.161,3.673l4.685,7.188a3.347,3.347,0,0,0-3.153,2.242,2.226,2.226,0,0,0,1.875,2.977Z" transform="translate(1847.085 407.581)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" class="UHKylWCm_5"></path>
 									</g>
-									<style data-made-with="vivus-instant">.UHKylWCm_0{stroke-dasharray:313 315;stroke-dashoffset:314;}.start .UHKylWCm_0{animation:UHKylWCm_draw 2000ms linear 0ms forwards;}.UHKylWCm_1{stroke-dasharray:370 372;stroke-dashoffset:371;}.start .UHKylWCm_1{animation:UHKylWCm_draw 2000ms linear 200ms forwards;}.UHKylWCm_2{stroke-dasharray:171 173;stroke-dashoffset:172;}.start .UHKylWCm_2{animation:UHKylWCm_draw 2000ms linear 400ms forwards;}.UHKylWCm_3{stroke-dasharray:92 94;stroke-dashoffset:93;}.start .UHKylWCm_3{animation:UHKylWCm_draw 2000ms linear 600ms forwards;}.UHKylWCm_4{stroke-dasharray:59 61;stroke-dashoffset:60;}.start .UHKylWCm_4{animation:UHKylWCm_draw 2000ms linear 800ms forwards;}.UHKylWCm_5{stroke-dasharray:59 61;stroke-dashoffset:60;}.start .UHKylWCm_5{animation:UHKylWCm_draw 2000ms linear 1000ms forwards;}@keyframes UHKylWCm_draw{100%{stroke-dashoffset:0;}}@keyframes UHKylWCm_fade{0%{stroke-opacity:1;}94.44444444444444%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style>
+									<style data-made-with="vivus-instant">.UHKylWCm_0{stroke-dasharray:313 315;stroke-dashoffset:314;}.start .UHKylWCm_0{animation:UHKylWCm_draw 1000ms linear 0ms forwards;}.UHKylWCm_1{stroke-dasharray:370 372;stroke-dashoffset:371;}.start .UHKylWCm_1{animation:UHKylWCm_draw 1000ms linear 200ms forwards;}.UHKylWCm_2{stroke-dasharray:171 173;stroke-dashoffset:172;}.start .UHKylWCm_2{animation:UHKylWCm_draw 1000ms linear 400ms forwards;}.UHKylWCm_3{stroke-dasharray:92 94;stroke-dashoffset:93;}.start .UHKylWCm_3{animation:UHKylWCm_draw 1000ms linear 600ms forwards;}.UHKylWCm_4{stroke-dasharray:59 61;stroke-dashoffset:60;}.start .UHKylWCm_4{animation:UHKylWCm_draw 1000ms linear 800ms forwards;}.UHKylWCm_5{stroke-dasharray:59 61;stroke-dashoffset:60;}.start .UHKylWCm_5{animation:UHKylWCm_draw 1000ms linear 1000ms forwards;}@keyframes UHKylWCm_draw{100%{stroke-dashoffset:0;}}@keyframes UHKylWCm_fade{0%{stroke-opacity:1;}94.44444444444444%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style>
 								</svg>
 
 							
-								<h3>Tratamento Íntimo</h3>
+								<h3>Tratamento Capilar</h3>
 								
-								<a href="#">
+								<a href="<?php echo bloginfo('url'); ?>/tratamento-capilar">
 									<button>
 										Eu Quero
 									</button>

@@ -1,4 +1,5 @@
 (function($) {
+  // MENU MOBILE
   (function() {
     $(".hamburger-menu").on("click", function() {
       $(".bar").toggleClass("animate");
@@ -37,6 +38,7 @@
     });
   })();
 
+  // OWL
   $(document).ready(function() {
     var owl = $(".slider");
     var post = $(".lista-posts");
@@ -50,7 +52,16 @@
       smartSpeed: 450,
       autoplay: true,
       autoplayTimeout: 5000,
-      autoplayHoverPause: true
+      autoplayHoverPause: true,
+      responsive: {
+        1400: {
+          nav: true,
+          navText: [
+            "<i class='fas fa-arrow-left'></i>",
+            "<i class='fas fa-arrow-right'></i>"
+          ]
+        }
+      }
     });
 
     post.owlCarousel({
@@ -104,44 +115,7 @@
     });
   });
 
-  $(window).scroll(function() {
-    function elementScrolled(elem) {
-      var docViewTop = $(window).scrollTop();
-      var docViewBottom = docViewTop + $(window).height();
-      var elemTop = $(elem).offset().top;
-      return elemTop <= docViewBottom && elemTop >= docViewTop;
-    }
-
-    if (elementScrolled(".qual-objetivo__conteudo")) {
-      var els = $(".class1"),
-        i = 0,
-        f = function() {
-          $(els[i++]).addClass("start");
-          if (i < els.length) setTimeout(f, 400);
-        };
-      f();
-    }
-  });
-
-  var galleryFeed = new Instafeed({
-    get: "user",
-    userId: 30035308,
-    accessToken: "30035308.1677ed0.c75f26f8e9fb42139b6f516755690792",
-    resolution: "standard_resolution",
-    useHttp: "true",
-    limit: 7,
-    template:
-      '<div class="foto-insta"><a href="{{link}}" target="_blank"><div class="img-featured-container"><div class="img-backdrop"></div><div class="description-container"><p class="caption">{{caption}}</p><span class="likes"><i class="fas fa-heart"></i> {{likes}}</span><span class="comments"><i class="fas fa-comment"></i> {{comments}}</span></div><img src="{{image}}" class="img-responsive"></div></a></div>',
-    target: "instafeed-gallery-feed",
-    after: function() {
-      // disable button if no more results to load
-      if (!this.hasNext()) {
-        btnInstafeedLoad.setAttribute("disabled", "disabled");
-      }
-    }
-  });
-  galleryFeed.run();
-
+  // YOUTUBE
   (function() {
     var v = document.getElementsByClassName("youtube-player");
     for (var n = 0; n < v.length; n++) {
@@ -184,6 +158,7 @@
     }
   });
 
+  // FAQ
   $(document).ready(function() {
     $(".set > a").on("click", function(e) {
       e.preventDefault();
@@ -212,4 +187,44 @@
       }
     });
   });
+
+  // SCROLL SVG
+  $(window).scroll(function() {
+    function elementScrolled(elem) {
+      var docViewTop = $(window).scrollTop();
+      var docViewBottom = docViewTop + $(window).height();
+      var elemTop = $(elem).offset().top;
+      return elemTop <= docViewBottom && elemTop >= docViewTop;
+    }
+
+    if (elementScrolled(".qual-objetivo__conteudo")) {
+      var els = $(".class1"),
+        i = 0,
+        f = function() {
+          $(els[i++]).addClass("start");
+          if (i < els.length) setTimeout(f, 400);
+        };
+      f();
+    }
+  });
+
+  // INSTAGRAM
+  var galleryFeed = new Instafeed({
+    get: "user",
+    userId: 30035308,
+    accessToken: "30035308.1677ed0.c75f26f8e9fb42139b6f516755690792",
+    resolution: "standard_resolution",
+    useHttp: "true",
+    limit: 7,
+    template:
+      '<div class="foto-insta"><a href="{{link}}" target="_blank"><div class="img-featured-container"><div class="img-backdrop"></div><div class="description-container"><p class="caption">{{caption}}</p><span class="likes"><i class="fas fa-heart"></i> {{likes}}</span><span class="comments"><i class="fas fa-comment"></i> {{comments}}</span></div><img src="{{image}}" class="img-responsive"></div></a></div>',
+    target: "instafeed-gallery-feed",
+    after: function() {
+      // disable button if no more results to load
+      if (!this.hasNext()) {
+        btnInstafeedLoad.setAttribute("disabled", "disabled");
+      }
+    }
+  });
+  galleryFeed.run();
 })(jQuery);

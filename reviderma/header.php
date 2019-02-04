@@ -41,13 +41,13 @@
 
               <div class="content-menu">
                 <ul>
-                  <li class="item-hbg"><a href="javascript: void(0)">Sobre Nós</a></li>
-                  <li class="item-hbg"><a href="javascript: void(0)">Tratamento Corporal</a></li>
-                  <li class="item-hbg"><a href="javascript: void(0)">Tratamento Facial</a></li>
-                  <li class="item-hbg"><a href="javascript: void(0)">Tratamento Capilar</a></li>
-                  <li class="item-hbg"><a href="javascript: void(0)">Tratamento Íntimo</a></li>
-                  <li class="item-hbg"><a href="javascript: void(0)">Blog</a></li>
-                  <li class="item-hbg"><a href="javascript: void(0)">Contato</a></li>
+                  <li class="item-hbg"><a href="<?php echo bloginfo('url'); ?>">Sobre Nós</a></li>
+                  <li class="item-hbg"><a href="<?php echo bloginfo('url'); ?>/tratamento-corporal/">Tratamento Corporal</a></li>
+                  <li class="item-hbg"><a href="<?php echo bloginfo('url'); ?>/tratamento-facial-exilis/">Tratamento Facial</a></li>
+                  <li class="item-hbg"><a href="<?php echo bloginfo('url'); ?>/tratamento-capilar/">Tratamento Capilar</a></li>
+                  <li class="item-hbg"><a href="<?php echo bloginfo('url'); ?>/tratamento-intimo/">Tratamento Íntimo</a></li>
+                  <li class="item-hbg"><a href="<?php echo bloginfo('url'); ?>/blog">Blog</a></li>
+                  <li class="item-hbg"><a href="<?php echo bloginfo('url'); ?>/contato">Contato</a></li>
                 </ul>
 
                 <div class="sociais">
@@ -65,45 +65,68 @@
 			<!-- INICIO SLIDER -->
 			<div class='slider owl-carousel owl-theme'>
         <div class="item slide1">
-            <h2>Btl Hot Summer</h2>
+            <h2>Reviderma Hot Summer</h2>
             <span> Você pronta para o espelho</span>
 
-            <button>
-              Eu quero <i class="fas fa-arrow-right"></i>
-            </button>
+            <a href="<?php echo bloginfo('url'); ?>/tratamento-facial/">
+              <button>
+                Eu quero <i class="fas fa-arrow-right"></i>
+              </button>
+            </a>
         </div><!-- /item -->
 
         <div class="item slide2">
           <div class="container">
             <div>
-              <h2>BTL VANQUISH</h2>
+              <h2>Reviderma VANQUISH</h2>
               <span> Reduza as medidas <br> e queime gordura</span>
-
-              <button>
-                Eu quero <i class="fas fa-arrow-right"></i>
-              </button>
+              
+              <a href="<?php echo bloginfo('url'); ?>/tratamento-corporal/">
+                <button>
+                  Eu quero <i class="fas fa-arrow-right"></i>
+                </button>
+              </a>
             </div>
           </div><!-- /container -->
         </div><!-- /item -->
 
         <div class="item slide3">
-          <h2>BTL XWAVE</h2>
+          <h2>Reviderma  XWAVE</h2>
           <span>Diga adeus a celulite</span>
 
-          <button>
-            Eu quero <i class="fas fa-arrow-right"></i>
-          </button>
+          <a href="<?php echo bloginfo('url'); ?>/tratamento-corporal/#xwave">
+            <button>
+              Eu quero <i class="fas fa-arrow-right"></i>
+            </button>
+          </a>
         </div><!-- /item -->
 
         <div class="item slide4">
           <div class="container">
             <div>
-              <h2>ULTRA FEMME 360º</h2>
-              <span> Reduza as medidas <br> e queime gordura</span>
+              <h2>Reviderma ULTRA FEMME 360º</h2>
+              <span>Mude sua vida<br> em 8 min</span>
 
-              <button>
-                Eu quero <i class="fas fa-arrow-right"></i>
-              </button>
+              <a href="<?php echo bloginfo('url'); ?>/tratamento-intimo/">
+                <button>
+                  Eu quero <i class="fas fa-arrow-right"></i>
+                </button>
+              </a>
+            </div>
+          </div><!-- /container -->
+        </div><!-- /item -->
+
+        <div class="item slide5">
+          <div class="container">
+            <div>
+              <h2>REVIDERMA PELE</h2>
+              <span> Perfeitamente Completo</span>
+
+              <a href="<?php echo bloginfo('url'); ?>/tratamento-facial-exilis/">
+                <button>
+                  Eu quero <i class="fas fa-arrow-right"></i>
+                </button>
+              </a>
             </div>
           </div><!-- /container -->
         </div><!-- /item -->
